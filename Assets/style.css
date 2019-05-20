@@ -1,0 +1,70 @@
+body {
+    font-family: 'Baloo Bhai', cursive;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+.container-fluid {
+    margin: auto;
+    width: 90%;
+    padding: 20px;
+}
+
+/* Checkboxes */
+
+.choices {
+    padding: 30px;
+}
+
+.container-box {
+    margin: 20px;
+}
+
+.box {
+    margin: 10px;
+}
+
+.container-cards {                      /* parent contianer of cards */
+    display: inline-block;                      /* This arranges the direct child element of the container in a row */
+    justify-content: space-evenly;      /* This defines the alignment of the items along the horizontal axis */
+    align-items: center;                /* This defines the  behaviour along the vertical axis */
+}
+
+.cards {
+    margin: auto;
+    width: 75%;
+    border: 20%
+}
+
+.card-img-top {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius:  25px 25px 25px 25px;
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 0.75rem;
+    }
+  }
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    h5 {
+        font-size: 1.15rem;
+    }
+}
