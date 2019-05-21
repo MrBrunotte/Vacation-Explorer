@@ -8,6 +8,8 @@
 
 ### Technologies Used
 
+[Flaticon](https://www.flaticon.com/)
+
 ### Testing
 
 ### Deployment

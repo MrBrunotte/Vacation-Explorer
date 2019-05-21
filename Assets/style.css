@@ -6,6 +6,17 @@ h1, h2 {
     text-transform: uppercase;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+a:active, a:hover {
+    color: red;
+    text-decoration: none;
+}
+
 .container-fluid {
     margin: auto;
     width: 90%;
@@ -15,15 +26,17 @@ h1, h2 {
 /* Checkboxes */
 
 .choices {
-    padding: 30px;
+    padding: 0px;
+    display: block;
 }
 
 .container-box {
-    margin: 20px;
+    margin: 20px 40px 20px 0px;
+
 }
 
 .box {
-    margin: 10px;
+    margin: 0px 0px 0px 0px;
 }
 
 .container-cards {                      /* parent contianer of cards */
@@ -34,7 +47,7 @@ h1, h2 {
 
 .cards {
     margin: auto;
-    width: 75%;
+    width: 40%;
     border: 20%
 }
 
@@ -45,26 +58,53 @@ h1, h2 {
     border-radius:  25px 25px 25px 25px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     body {
         font-size: 0.75rem;
     }
   }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     h1 {
         font-size: 1.75rem;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 567px){
+    h1 {
+        font-size: 1.3rem;
+    }
+    
+    .container-box {
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 1023px) {
     h2 {
         font-size: 1.25rem;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     h5 {
         font-size: 1.15rem;
+    }
+}
+
+@media (min-width: 567px) and (max-width: 813px) {
+    .cards {
+        margin: auto;
+        width: 80%;
+        border: 20%
+    }
+}
+
+@media (max-width: 1023px){
+    .img-fluid {
+        max-width: 80%;
+        height: auto;
     }
 }
