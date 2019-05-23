@@ -12,19 +12,32 @@ a {
     font-size: 2rem;
 }
 
-a:active, a:hover {
+a:active,
+a:hover,
+a:focus,
+a:active:focus {
     color: red;
     text-decoration: none;
-}
-
-.search-input {
-    margin-top: 10px;
 }
 
 .container-fluid {
     margin: auto;
     width: 90%;
     padding: 20px;
+}
+
+/* header image */
+.img-fluid {
+    border-radius: 25px;
+}
+
+/* Modal */
+.btn-modal:active,
+.btn-modal:hover,
+.btn-modal:focus,
+.btn-modal:active:focus {
+    color: red;
+    text-decoration: none;
 }
 
 /* Checkboxes */
@@ -36,15 +49,26 @@ a:active, a:hover {
 
 .container-box {
     margin: 20px 40px 20px 0px;
-
 }
 
 .box {
     margin: 0px 0px 0px 0px;
 }
 
+/* search box */
+.search-input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.search {
+    border: 1px solid grey;
+    border-radius:25px;
+}
+
+/* recommendations cards */
 .container-cards {                      /* parent contianer of cards */
-    display: inline-block;                      /* This arranges the direct child element of the container in a row */
+    display: inline-block;              /* This arranges the direct child element of the container in a row */
     justify-content: space-evenly;      /* This defines the alignment of the items along the horizontal axis */
     align-items: center;                /* This defines the  behaviour along the vertical axis */
 }
@@ -55,12 +79,32 @@ a:active, a:hover {
     border: 20%
 }
 
+.card-text {
+    font-size: 0.75rem;
+}
+
 .card-img-top {
     height: auto;
     width: 100%;
     padding: 10px;
-    border-radius:  25px 25px 25px 25px;
+    border-radius:  25px 25px 25px 25px !important;
 }
+
+/* back to top link */
+.anchor-bottom {
+    color: black;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.anchor-bottom:hover,
+  .anchor-bottom:active,
+  .anchor-bottom:focus,
+  .anchor-bottom:active:focus {
+    color: red;
+  }
+
+/* Media queries - responsivness */
 
 @media (max-width: 1023px) {
     body {
