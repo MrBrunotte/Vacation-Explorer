@@ -27,26 +27,26 @@ There are mainly two features that the user needs to interact with before gettin
 
 #### ?
 
-    The ? is a modal that when clicked informs the user how to use the website.
+The ? is a modal that when clicked informs the user how to use the website.
 
 #### Checkboxes
 
-    The user checks one, two or three boxes according to what recommendations the user wants. When a box is checked the recommendations will be displayed below the search field.
+The user checks one, two or three boxes according to what recommendations the user wants. When a box is checked the recommendations will be displayed below the search field.
 
 #### Search field
 
-    The user types the city where they want to travel to.
+The user types the city where they want to travel to.
 
 #### Recommendations
 
-    There are three catagories of recommendations
-        1) Where to stay?
-        2) Where to eat?
-        3) What to do?
+There are three catagories of recommendations
+    1) Where to stay?
+    2) Where to eat?
+    3) What to do?
 
 #### Back to top link
 
-    When the user is at the bottom of the page, the user can click the "Back to top" link to easily get back to the start.
+When the user is at the bottom of the page, the user can click the "Back to top" link to easily get back to the start.
 
 ### Technologies Used
 
@@ -65,8 +65,11 @@ The fonts that I used came from Google fonts and the fontfamily used is called: 
 
 [GoogleFonts](https://fonts.google.com/)
 
+#### Font Awsome
 
-[Flaticon](https://www.flaticon.com/)
+I used the icons for the checkboxes form the Font Awsome website
+
+[Fontawsome](https://fontawesome.com/start)
 
 ### Testing
 
