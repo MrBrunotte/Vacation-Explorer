@@ -13,7 +13,7 @@ The typical user is person or family that haven't decided on where they want to 
 
 The wireframe was made on the [Balsamiq](https://balsamiq.com/wireframes/) website. It is a general layout of the page and its responsivness to smaller screens.
 
-You can take a look at the wireframe here: [VacationExplorerWireframe](Vacation-Explorer-Wirefram.pdf)
+You can take a look at the wireframe here: [VacationExplorerWireframe](Vacation-Explorer-Wireframe.pdf)
 
 ### Mockup
 
