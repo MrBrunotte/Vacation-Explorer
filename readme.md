@@ -71,6 +71,12 @@ I used the icons for the checkboxes form the Font Awsome website
 
 [Fontawsome](https://fontawesome.com/start)
 
+#### jQuery library
+
+I used the jQuery library for the modal
+
+[jQuery](https://code.jquery.com/)
+
 ### Testing
 
 ### Deployment
