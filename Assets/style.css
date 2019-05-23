@@ -17,6 +17,10 @@ a:active, a:hover {
     text-decoration: none;
 }
 
+.search-input {
+    margin-top: 10px;
+}
+
 .container-fluid {
     margin: auto;
     width: 90%;
