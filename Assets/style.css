@@ -28,7 +28,8 @@ a:active:focus {
 
 /* header image */
 .img-fluid {
-    border-radius: 25px;
+    height: 670px;
+    width: 100%;
 }
 
 /* Modal */

@@ -9,15 +9,13 @@ This website is for anyone who thinks of traveling to another city and want some
 
 The typical user is person or family that haven't decided on where they want to go for a vacation. They want a simple first look at the destination.
 
-### Wireframe
+### Wireframe and Mockup
 
-The wireframe was made on the [Balsamiq](https://balsamiq.com/wireframes/) website. It is a general layout of the page and its responsivness to smaller screens.
+The wireframe displays my sites structure both on a smartphone and on a desktop, the mockup shows the static visual design draft. In the mockup you can see the colors and typography etc of the page.
 
-You can take a look at the wireframe here: [VacationExplorerWireframe](Vacation-Explorer-Wireframe.pdf)
+The wireframe and mockup was made with [AdobeXd](https://xd.adobe.com/view/071a08ba-0067-4139-493a-d2b49e5466d3-712b/).
 
-### Mockup
-
-The mockup shows the static visual design draft. In the mockup you can see the colors and typography etc of the page. You can take a look at the mockup here: [Mockup](mockup.html)
+You can take a look at the wireframe and mockup here: [WireframeAndMockUp](https://xd.adobe.com/view/071a08ba-0067-4139-493a-d2b49e5466d3-712b/)
 
 ### Features
 
