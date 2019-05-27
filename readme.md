@@ -9,6 +9,16 @@ This website is for anyone who thinks of traveling to another city and want some
 
 The typical user is person or family that haven't decided on where they want to go for a vacation. They want a simple first look at the destination.
 
+### Fonts
+
+I have used two different fonts from Google fonts to create a typographic harmony.
+I used the Roboto Condensed fonts for the headings and it is pared with the Oswald fonts for the body text.
+
+[GoogleFonts](https://fonts.google.com/)
+
+1) Roboto Condensed [RobotoCondensed](https://fonts.google.com/?selection.family=Oswald|Roboto+Condensed&query=roboto+condensed)
+2) Oswald [Oswald](https://fonts.google.com/?selection.family=Oswald|Roboto+Condensed&query=oswald)
+
 ### Wireframe and Mockup
 
 The wireframe displays my sites structure both on a smartphone and on a desktop, the mockup shows the static visual design draft. In the mockup you can see the colors and typography etc of the page.
