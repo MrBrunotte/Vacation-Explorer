@@ -1,9 +1,15 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-p {
-    font-family: 'Oswald', sans-serif;
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
 }
 
 a {
@@ -17,21 +23,90 @@ a:hover {
     text-decoration: none;
 }
 
-
 /* section-header */
 .container-fluid {
     padding: 0px;
 }
 
+
 .img-fluid {
-    background-image: url("Images/new-york.jpg");
-    background-size: cover;
+    background: url(../Images/new-york-rz.jpg);
+    background-size: 100vh no-repeat;
+    height: auto;
+    max-width: 100%;
+    padding: 0px;
     text-align: center;
-    
-    height: 700px;
-    width: 100%;
-    z-index: -10;
 }
+
+.user-input {
+    height: 750px;
+    padding-top: 100px;
+    color: white;
+}
+
+.header-box {
+    background-color: rgba(47, 47, 47, 0.7);
+    border-radius: 25px;
+    border: solid 1px red;
+    padding: 10px 10px 10px 20px;
+}
+
+.help-sign {
+    color: rgba(46, 45, 45, 0.671);
+    font-size: 3rem;
+}
+.icon {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.container-box {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.check-box {
+    margin-left: 20px;
+}
+
+.box {
+    margin-left: 10px;
+}
+
+.search-input {
+    text-align: center;
+    background-color: rgba(47, 47, 47, 0.6);
+    color:white;
+    border-radius: 25px;
+    border: solid 1px red;
+    width: 350px;
+    margin-top: 15px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+.search {
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    width: 300px;
+    letter-spacing: 0.1rem;
+    background-color: transparent;
+    color: white;
+}
+
+.search-box {
+    text-align: center;
+}
+
+.search-btn {
+    color: white;
+    padding-right: 15px;
+}
+
+
+
+
 
 /* modal */
 
@@ -43,6 +118,4 @@ a:hover {
     text-decoration: none;
 }
 
-.help-sign {
-    font-size: 3rem;
-}
+/* */
