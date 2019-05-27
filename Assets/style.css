@@ -26,14 +26,10 @@ a:hover {
 
 /* section-header */
 
-.jumbotron {
-    background: transparent;
-    height: auto;
-}
-
 .img-fluid {
     background-image: url(../Images/new-york.jpg);
     background-size: cover;
+    min-height: auto;
 
 }
 
