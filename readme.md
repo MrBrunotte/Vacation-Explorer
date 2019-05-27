@@ -14,8 +14,6 @@ The typical user is person or family that haven't decided on where they want to 
 I have used two different fonts from Google fonts to create a typographic harmony.
 I used the Roboto Condensed fonts for the headings and it is pared with the Oswald fonts for the body text.
 
-[GoogleFonts](https://fonts.google.com/)
-
 1) Roboto Condensed [RobotoCondensed](https://fonts.google.com/?selection.family=Oswald|Roboto+Condensed&query=roboto+condensed)
 2) Oswald [Oswald](https://fonts.google.com/?selection.family=Oswald|Roboto+Condensed&query=oswald)
 
@@ -29,7 +27,13 @@ You can take a look at the wireframe and mockup here: [WireframeAndMockUp](https
 
 ### Features
 
-There are mainly two features that the user needs to interact with before getting a result: Choosing recommendation catagory and typing city of interest! The webpage is built to be simple for the user to use
+There are mainly two features that the user needs to interact with before getting a result: 
+
+1) Choosing the category of interest,
+and
+2) typing the city of interest!
+
+The webpage is built to be simple and easy for the user to use!
 
 #### Existing Features
 
