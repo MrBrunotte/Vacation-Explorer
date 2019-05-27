@@ -23,7 +23,7 @@ I used the Roboto Condensed fonts for the headings and it is pared with the Oswa
 
 The wireframe displays my sites structure both on a smartphone and on a desktop, the mockup shows the static visual design draft. In the mockup you can see the colors and typography etc of the page.
 
-The wireframe and mockup was made with [AdobeXd](https://xd.adobe.com/view/071a08ba-0067-4139-493a-d2b49e5466d3-712b/).
+The wireframe and mockup was made with [AdobeXd](https://www.adobe.com/#).
 
 You can take a look at the wireframe and mockup here: [WireframeAndMockUp](https://xd.adobe.com/view/071a08ba-0067-4139-493a-d2b49e5466d3-712b/)
 
@@ -33,7 +33,7 @@ There are mainly two features that the user needs to interact with before gettin
 
 #### Existing Features
 
-#### ?
+#### ? anchor
 
 The ? is a modal that when clicked informs the user how to use the website.
 
@@ -47,10 +47,11 @@ The user types the city where they want to travel to.
 
 #### Recommendations
 
-There are three catagories of recommendations
-    1) Where to stay?
-    2) Where to eat?
-    3) What to do?
+There are three catagories of recommendations:
+
+1) Where to stay?
+2) Where to eat?
+3) What to do?
 
 #### Back to top link
 
