@@ -10,6 +10,7 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1rem;
+    padding-top: 100px;
 }
 
 a {
@@ -24,27 +25,20 @@ a:hover {
 }
 
 /* section-header */
-.container-fluid {
-    padding: 0px;
-}
 
+.jumbotron {
+    background: transparent;
+    height: auto;
+}
 
 .img-fluid {
-    background: url(../Images/new-york-rz.jpg);
-    background-size: 100vh no-repeat;
-    height: auto;
-    max-width: 100%;
-    padding: 0px;
-    text-align: center;
-}
+    background-image: url(../Images/new-york.jpg);
+    background-size: cover;
 
-.user-input {
-    height: 750px;
-    padding-top: 100px;
-    color: white;
 }
 
 .header-box {
+    color: white;
     background-color: rgba(47, 47, 47, 0.7);
     border-radius: 25px;
     border: solid 1px red;
@@ -56,11 +50,13 @@ a:hover {
     font-size: 3rem;
 }
 .icon {
+    color: white;
     margin-right: 10px;
     margin-left: 10px;
 }
 
 .container-box {
+    color: white;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -117,5 +113,3 @@ a:hover {
     color: red;
     text-decoration: none;
 }
-
-/* */
