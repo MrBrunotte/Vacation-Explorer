@@ -10,7 +10,7 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    padding-top: 30px;
+    padding-top: 70px;
 }
 
 h2 {
@@ -43,21 +43,46 @@ a:hover {
     height: 100%;
 }
 
+/* boxes */
 .header-box {
     color: white;
-    background-color: rgba(47, 47, 47, 0.7);
+    background-color: rgba(47, 47, 47, 0.3);
     border-radius: 25px;
     border: solid 1px red;
     padding: 10px 10px 10px 20px;
 }
 
+.search-box {
+    text-align: center;
+    background-color: rgba(47, 47, 47, 0.6);
+    color:white;
+    border-radius: 25px;
+    border: solid 1px red;
+    width: 350px;
+    margin-top: 15px;
+    padding: 5px 5px 5px 5px;
+}
+
+.box {
+    margin-left: 10px;
+}
+
+/* modal popup*/
 .help-sign {
     color: rgba(46, 45, 45, 0.671);
     font-size: 3rem;
 }
+
+.btn-modal:active,
+.btn-modal:hover,
+.btn-modal:focus,
+.btn-modal:active:focus {
+    color: red;
+    text-decoration: none;
+}
+
 .icon {
-    color: white;
-    margin-right: 10px;
+    color: rgb(255, 255, 255);
     margin-left: 10px;
 }
 
@@ -73,18 +98,6 @@ a:hover {
 
 .box {
     margin-left: 10px;
-}
-
-.search-input {
-    text-align: center;
-    background-color: rgba(47, 47, 47, 0.6);
-    color:white;
-    border-radius: 25px;
-    border: solid 1px red;
-    width: 350px;
-    margin-top: 15px;
-    padding: 5px 5px 5px 5px;
-
 }
 
 .search {
@@ -106,16 +119,44 @@ a:hover {
     padding-right: 15px;
 }
 
+/* Media queries less than 575px*/
 
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 0.75rem;
+        letter-spacing: 0.3rem;
+        padding-bottom: 15px;
+    }
 
+    span.check-box {
+        display: block;
+    }
 
+    .icon {
+        display: none;
+    }
 
-/* modal */
+    .help-sign {
+        font-size: 1.5rem;
+    }
 
-.btn-modal:active,
-.btn-modal:hover,
-.btn-modal:focus,
-.btn-modal:active:focus {
-    color: red;
-    text-decoration: none;
-}
+    .search {
+        font-size: 0.75rem;
+        text-align: center;
+        border: none;
+        border-radius: 25px;
+        width: 200px;
+        letter-spacing: 0.1rem;
+        background-color: transparent;
+        color: white;
+    }
+  }
+
+  /* between 576px and 991px */
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    h1 {
+        font-size: 1.75rem;
+        letter-spacing: 0.5rem;
+    }
+  }
