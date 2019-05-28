@@ -23,7 +23,7 @@
 
 <body>
     <section #="what-choices">
-        <div class="wrapper">
+        <div class="wrapper-top">
             <div class="image">
                 <section #="what-choices">
                     <div class="text-center">
@@ -34,21 +34,21 @@
                         <div class="choices">
                             <span class="check-box">
                                 <i class="fas fa-bed icon"></i>
-                                <label class="container-box">Where to stay?
+                                <label class="recommendation-box">Hotel recommendations
                                     <input class="box" type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
                             </span>
                             <span class="check-box">
                                 <i class="fas fa-utensils icon"></i>
-                                <label class="container-box">Where to eat?
+                                <label class="recommendation-box">Restaurant recommendations
                                     <input class="box" type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
                             </span>
                             <span class="check-box">
                                 <i class="fas fa-music icon"></i>
-                                <label class="container-box">What to do?
+                                <label class="recommendation-box">What to do?
                                     <input class="box" type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
@@ -64,7 +64,108 @@
             </div>
         </div>
     </section>
-
+    <br>
+    <section #="recommendations">
+        <div class="container-cards">
+            <div class="cards">
+                <h2>Hotel recommendations</h2>
+                <div class="card-group">
+                    <div class="card" id="hotel1">
+                        <img src="Images/hotel-1.jpg" class="card-img-top" alt="Hotel">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 1</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dolores
+                                deleniti a dolor possimus id non eveniet nemo perferendis officia.</p>
+                        </div>
+                    </div>
+                    <div class="card" id="hotel2">
+                        <img src="Images/hotel-2.jpg" class="card-img-top" alt="Hotel">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
+                                accusamus
+                                dignissimos architecto, consectetur ullam sit minus. Numquam harum voluptates vitae!.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" id="hotel3">
+                        <img src="Images/hotel-3.jpg" class="card-img-top" alt="Hotel">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                                obcaecati
+                                quam vero? Voluptatibus omnis eligendi, dolores incidunt cupiditate exercitationem
+                                laboriosam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="cards">
+                <h2>Restaurant recommendations</h2>
+                <div class="card-group">
+                    <div class="card" id="rest1">
+                        <img src="Images/restaurant-1.jpg" class="card-img-top" alt="Restaurant">
+                        <div class="card-body">
+                            <h5 class="card-title">Restaurant 1</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, quis.
+                                Incidunt voluptatum esse amet, fuga dicta quia consequuntur, non voluptas, enim porro
+                                dolores eaque expedita.</p>
+                        </div>
+                    </div>
+                    <div class="card" id="rest2">
+                        <img src="Images/restaurant-2.jpg" class="card-img-top" alt="Restaurant">
+                        <div class="card-body">
+                            <h5 class="card-title">Restaurant 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+                                itaque,
+                                placeat dicta in repudiandae autem corrupti dignissimos iusto quis odit?</p>
+                        </div>
+                    </div>
+                    <div class="card" id="rest3">
+                        <img src="Images/restaurant-3.jpg" class="card-img-top" alt="Restaurant">
+                        <div class="card-body">
+                            <h5 class="card-title">Restaurant 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, suscipit.
+                                Provident assumenda blanditiis tempora sint quos, vero saepe cupiditate doloremque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="cards">
+                <h2>what to do?</h2>
+                <div class="card-group">
+                    <div class="card" id="recommend1">
+                        <img src="Images/excursion-2.jpg" class="card-img-top" alt="Excursion">
+                        <div class="card-body">
+                            <h5 class="card-title">Excursion 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                                incidunt dolorum perferendis quae. Eum quibusdam, perspiciatis ipsum labore minima aut!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" id="recommend2">
+                        <img src="Images/excursion-2.jpg" class="card-img-top" alt="Excursion">
+                        <div class="card-body">
+                            <h5 class="card-title">Excursion 2</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id explicabo
+                                voluptatem necessitatibus temporibus architecto labore exercitationem, placeat et neque
+                                molestias!</p>
+                        </div>
+                    </div>
+                    <div class="card" id="recommend3">
+                        <img src="Images/excursion-2.jpg" class="card-img-top" alt="Excursion">
+                        <div class="card-body">
+                            <h5 class="card-title">Excursion 3</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut
+                                consectetur ullam magni non laboriosam nisi eaque obcaecati voluptatibus doloribus?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="top-link text-center">

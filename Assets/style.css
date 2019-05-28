@@ -28,10 +28,11 @@ a:hover {
     color: red;
     text-decoration: none;
 }
+/*--------------------------- <section #="what-choices"> -----------------------*/
 
 /* Wrapper for the background image */
-.wrapper {
-    height: 70vh;
+.wrapper-top {
+    height: 85vh;
     width: auto;
 }
 
@@ -67,12 +68,6 @@ a:hover {
     margin-left: 10px;
 }
 
-/* modal popup*/
-.help-sign {
-    color: rgba(46, 45, 45, 0.671);
-    font-size: 3rem;
-}
-
 .btn-modal:active,
 .btn-modal:hover,
 .btn-modal:focus,
@@ -86,7 +81,7 @@ a:hover {
     margin-left: 10px;
 }
 
-.container-box {
+.recommendation-box {
     color: white;
     margin-left: 10px;
     margin-right: 10px;
@@ -119,13 +114,105 @@ a:hover {
     padding-right: 15px;
 }
 
-/* Media queries less than 575px*/
+/* modal popup*/
+.help-sign {
+    color: rgba(46, 45, 45, 0.671);
+    font-size: 3rem;
+}
+
+/*--------------------------- END OFF <section #="what-choices"> -----------------------*/
+
+/* --------------------------- Recommendation section ----------------------------------*/
+/* recommendations cards */
+.container-cards {                      
+    display: inline-block;              
+    justify-content: space-evenly;      
+    align-items: center;                
+}
+
+.card {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    min-width: 30px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+  }
+
+.card-body {
+    padding: 0px;
+}
+
+.card-group {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.cards {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    border: 20%; 
+}
+
+.card-text {
+    width: 140px;
+    display: block;
+    font-size: 1rem;
+}
+
+.card-img-top {
+    height: auto;
+    width: 80%;
+    border-radius: 25px !important;
+    padding: 0px 10px 0px 10px;
+}
+
+/* -----------------------Media queries less than 575px -------------------------*/
 
 @media screen and (max-width: 575px) {
     h1 {
         font-size: 0.75rem;
         letter-spacing: 0.3rem;
         padding-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .wrapper-top {
+        height: 85vh;
+        width: auto;
+    }
+
+    .card {
+        padding-left: 5px;
+    }
+
+    .card-title {
+        margin-bottom: 2px;
+        font-size: 0.9rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .card-text {
+        font-size: 0.6rem;
+        letter-spacing: 0.05rem;
+        display: block;
+        width: 120px;
+    }
+
+    .card-img-top {
+        padding: 0px 10px 0px 0px;
+    }
+
+    .card-body {
+        padding: 0px;
     }
 
     span.check-box {
@@ -150,13 +237,57 @@ a:hover {
         background-color: transparent;
         color: white;
     }
+
+    .modal-content {
+        width: 300px;
+        height: 300px;
+    }
   }
 
-  /* between 576px and 991px */
+  /* ------------------- Media queries between 576px and 991px -------------------------*/
 
-@media screen and (min-width: 576px) and (max-width: 991px) {
+@media screen and (min-width: 576px) and (max-width: 1050px) {
     h1 {
         font-size: 1.75rem;
         letter-spacing: 0.5rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .card-title {
+        margin-bottom: 2px;
+        font-size: 1rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .card-text {
+        font-size: 0.5rem;
+        letter-spacing: 0.05rem;
+        display: block;
+        width: 120px;
+    }
+
+    .card-body {
+        padding: 0px;
+    }
+
+    .wrapper-top {
+        height: 60vh;
+        width: auto;
+    }
+
+    .card-img-top {
+    
+        height: auto;
+        width: 90%;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .modal-content {
+        width: 300px;
+        height: 300px;
     }
   }
