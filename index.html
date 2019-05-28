@@ -23,68 +23,71 @@
 
 <body>
     <section #="what-choices">
-        <div class="container-fluid img-fluid text-center">
-            <h1>
-                <span class="header-box">Vacation explorer</span>
-            </h1>
-            <a class="help-sign" href="#" data-toggle="modal" data-target="#infoModal">?</a>
-            <div class="choices">
-                <br><br><br>
-                <span class="check-box">
-                    <i class="fas fa-bed icon"></i>
-                    <label class="container-box">Where to stay?
-                        <input class="box" type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                </span>
-                <span class="check-box">
-                    <i class="fas fa-utensils icon"></i>
-                    <label class="container-box">Where to eat?
-                        <input class="box" type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                </span>
-                <span class="check-box">
-                    <i class="fas fa-music icon"></i>
-                    <label class="container-box">What to do?
-                        <input class="box" type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                </span>
+        <div class="wrapper">
+            <div class="image">
+                <section #="what-choices">
+                    <div class="text-center">
+                        <h1>
+                            <span class="header-box">Vacation explorer</span>
+                        </h1>
+                        <a class="help-sign" href="#" data-toggle="modal" data-target="#infoModal">?</a>
+                        <div class="choices">
+                            <span class="check-box">
+                                <i class="fas fa-bed icon"></i>
+                                <label class="container-box">Where to stay?
+                                    <input class="box" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </span>
+                            <span class="check-box">
+                                <i class="fas fa-utensils icon"></i>
+                                <label class="container-box">Where to eat?
+                                    <input class="box" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </span>
+                            <span class="check-box">
+                                <i class="fas fa-music icon"></i>
+                                <label class="container-box">What to do?
+                                    <input class="box" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </span>
+                        </div>
+                        <br>
+                        <span class="search-box search-input" id="search">
+                            <input class="search" type="text" placeholder="Type city...">
+                            <a href="" class="search-btn"><i class="fas fa-search-location"></i></a>
+                        </span>
+                    </div>
+                </section>
             </div>
-            <br>
-            <span class="search-box search-input" id="search">
-                <input class="search" type="text" placeholder="Type city...">
-                <a href="" class="search-btn"><i class="fas fa-search-location"></i></a>
-            </span>
         </div>
     </section>
 
-    <section-header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <div class="modal fade" id="infoModal">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h2>How does it work?</h2>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p>
-                                                    <ol>
-                                                        <li>Check the boxes of your interest!</li>
-                                                        <li>Type the destination of your choise.</li>
-                                                    </ol>
-                                                    Explore the recommendations near your destination below.
-                                                </p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <input class="btn btn-modal" data-dismiss="modal" value="Close">
-                                            </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="modal fade" id="infoModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2>How does it work?</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                <ol>
+                                                    <li>Check the boxes of your interest!</li>
+                                                    <li>Type the destination of your choise.</li>
+                                                </ol>
+                                                Explore the recommendations near your destination below.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <input class="btn btn-modal" data-dismiss="modal" value="Close">
                                         </div>
                                     </div>
                                 </div>
@@ -94,7 +97,7 @@
                 </div>
             </div>
         </div>
-    </section-header>
+    </div>
 
 
 

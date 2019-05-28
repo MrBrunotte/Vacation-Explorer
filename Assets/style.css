@@ -10,7 +10,12 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    padding-top: 100px;
+    padding-top: 30px;
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
 a {
@@ -24,13 +29,18 @@ a:hover {
     text-decoration: none;
 }
 
-/* section-header */
+/* Wrapper for the background image */
+.wrapper {
+    height: 70vh;
+    width: auto;
+}
 
-.img-fluid {
-    background-image: url(../Images/new-york.jpg);
-    background-size: cover;
-    min-height: auto;
-
+.image {
+    background-image: url("../Images/new-york.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    height: 100%;
 }
 
 .header-box {

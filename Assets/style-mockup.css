@@ -39,16 +39,15 @@ a:active:focus {
 
 /* Checkboxes */
 
-.choices {
-
+.wrapper {
+    position: relative;
 }
 
-.container-box {
 
-}
 
-.box {
 
+.text {
+ position: absolute;
 }
 
 /* search box */
