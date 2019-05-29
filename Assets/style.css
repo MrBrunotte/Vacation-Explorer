@@ -16,6 +16,11 @@ h1 {
 h2 {
     font-weight: bold;
     text-transform: capitalize;
+    color: #BC6612;
+}
+
+h3, h5, li, p {
+    color: #BC6612;
 }
 
 a {
@@ -25,7 +30,7 @@ a {
 
 a:active,
 a:hover {
-    color: red;
+    color: #BC6612;
     text-decoration: none;
 }
 /*--------------------------- <section #="what-choices"> -----------------------*/
@@ -35,6 +40,8 @@ a:hover {
     height: 85vh;
     width: auto;
 }
+
+
 
 .image {
     background-image: url("../Images/new-york.jpg");
@@ -68,11 +75,15 @@ a:hover {
     margin-left: 10px;
 }
 
+.modal-color {
+    color: #BC6612;
+}
+
 .btn-modal:active,
 .btn-modal:hover,
 .btn-modal:focus,
 .btn-modal:active:focus {
-    color: red;
+    color: #BC6612;
     text-decoration: none;
 }
 
@@ -152,6 +163,7 @@ a:hover {
 }
 
 .recommendations-header {
+
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -165,7 +177,7 @@ a:hover {
     flex-direction: column;
   }
 
-  .recommendation {
+.recommendation {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -180,147 +192,155 @@ a:hover {
     padding: 10px;
 }
 
-.recommendation-image-box {
-height: auto;
-width: auto;
-}
-
 .recommendation-image {
+    padding: 0px 0px 0px 25px;
     height: auto;
-    width: 100%;
-}
-
-.recommendation-body {
-    text-align: center;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
-}
-
-.recommendation-title {
-    margin-bottom: 0.75rem;
-}
-
-.recommendation-text {
-
-}
-
-
-
-
-
-
-
-.container-hotel {
-    display: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.hotel {
-    display: left;
-    height: 200px;
     width: auto;
 }
 
-.hotel-text {
-    width: 20%;
-}
-
-.
-
-
-
-/* recommendations cards */
-.container-cards {                      
-    display: inline-block;              
-    justify-content: space-evenly;      
-    align-items: center;                
-}
-
-.card {
-    position: relative;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    min-width: 30px;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: none;
-  }
-
-.card-body {
-    padding: 0px;
-}
-
-.card-group {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.cards {
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    border: 20%; 
-}
-
-.card-text {
-    width: 140px;
-    display: block;
-    font-size: 1rem;
-}
-
-.card-img-top {
+.recommendation-image {
+    padding-right: 10px;
     height: auto;
     width: 80%;
-    border-radius: 25px !important;
-    padding: 0px 10px 0px 10px;
 }
 
-/* -----------------------Media queries less than 575px -------------------------*/
 
-@media screen and (max-width: 575px) {
+.recommendation-body {
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    width: 1900px;
+}
+
+.recommendation-title {
+    padding: 20px 40px 20px 40px;
+    margin: 0px;
+}
+
+.recommendation-text {
+    padding: 0px 40px 10px 40px;
+    margin: 0px;
+    color: #BC6612;
+}
+
+/* ----------------------------------MEDIA QUERIES -------------------------*/
+@media screen and (min-width: 1200px) {
+    .wrapper-bottom {
+        width: 100%;
+        padding-right: 200px;
+        padding-left: 200px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+}
+
+
+/* -----------------------Media queries less than 330px -------------------------*/
+
+@media screen and (max-width: 330px) {
     h1 {
-        font-size: 0.75rem;
+        font-size: 1.1rem;
         letter-spacing: 0.3rem;
-        padding-bottom: 15px;
     }
 
-    h2 {
+    h2, h3, h5 {
         font-size: 0.9rem;
-        letter-spacing: 0.05rem;
+    }
+
+    .help-sign {
+        font-size: 1.6rem;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .recommendation-box {
+        font-size: 0.9rem;
+    }
+
+    .search {
+        width: 182px;
+        font-size: 0.7rem;
+    }
+
+    .header-recommendations-section {
+        height: 100px;
+        padding-top: 10px;
+    }
+
+    .recommendation-body {
+        text-align: center;
+        padding: 0px 0px 0px 10px;
+    }
+
+    .recommendation-image {
+        height: 60px;
+        width: 100%;
+    }
+
+    .recommendation-text {
+        font-size: 0.7rem;
+        margin: 0px;
+        display: block;
+        max-width: 20ch;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btn-bottom {
+        font-size: 0.5rem;
+        color: #BC6612;
+    }
+}
+
+/* -----------------------Media queries between 331px and 413px -------------------------*/
+@media screen and (min-width: 331px) and (max-width: 413px) {
+    h1 {
+        font-size: 1.1rem;
+        letter-spacing: 0.3rem;
+    }
+
+    h2, h3, h5 {
+        font-size: 0.9rem;
+    }
+    
+    .header-recommendations-section {
+        height: 100px;
+        padding-top: 10px;
+    }
+
+    .recommendation-body {
+        text-align: center;
+        padding: 0px 0px 0px 10px;
+    }
+
+    .recommendation-image {
+        height: 60px;
+        width: 100%;
+    }
+
+    .recommendation-text {
+        font-size: 0.7rem;
+        margin: 0px;
+        display: block;
+        max-width: 35ch;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btn-bottom {
+        font-size: 0.5rem;
+    }
+
+    .header-box {
+        padding: 10px 10px 10px 10px;
     }
 
     .wrapper-top {
         height: 85vh;
         width: auto;
-    }
-
-    .card {
-        padding-left: 5px;
-    }
-
-    .card-title {
-        margin-bottom: 2px;
-        font-size: 0.9rem;
-        letter-spacing: 0.05rem;
-    }
-
-    .card-text {
-        font-size: 0.6rem;
-        letter-spacing: 0.05rem;
-        display: block;
-        width: 120px;
-    }
-
-    .card-img-top {
-        padding: 0px 10px 0px 0px;
-    }
-
-    .card-body {
-        padding: 0px;
     }
 
     span.check-box {
@@ -333,6 +353,10 @@ width: auto;
 
     .help-sign {
         font-size: 1.5rem;
+    }
+
+    .recommendation-box {
+        font-size: 1.1rem;
     }
 
     .search {
@@ -350,14 +374,18 @@ width: auto;
         width: 300px;
         height: 300px;
     }
+
+    .btn-bottom {
+        font-size: 0.5rem;
+    }
   }
 
-  /* ------------------- Media queries between 576px and 991px -------------------------*/
+/* ------------------- Media queries between 414px and 599px -------------------------*/
 
-@media screen and (min-width: 576px) and (max-width: 1050px) {
+@media screen and (min-width: 414px) and (max-width: 599px) {
     h1 {
-        font-size: 1.75rem;
-        letter-spacing: 0.5rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.3rem;
     }
     
     h2 {
@@ -365,37 +393,104 @@ width: auto;
         letter-spacing: 0.05rem;
     }
 
-    .card-title {
-        margin-bottom: 2px;
+    h3 {
         font-size: 1rem;
-        letter-spacing: 0.05rem;
     }
 
-    .card-text {
-        font-size: 0.5rem;
-        letter-spacing: 0.05rem;
-        display: block;
-        width: 120px;
+    .icon {
+        display: none;
     }
 
-    .card-body {
-        padding: 0px;
+    .help-sign {
+        font-size: 1.5rem;
+    }
+
+    .recommendation-box {
+        font-size: 1.3rem;
     }
 
     .wrapper-top {
-        height: 60vh;
+        height: 85vh;
         width: auto;
-    }
-
-    .card-img-top {
-    
-        height: auto;
-        width: 90%;
-        padding: 0px 10px 0px 0px;
     }
 
     .modal-content {
         width: 300px;
         height: 300px;
     }
+
+    .recommendation-text {
+        font-size: 0.7rem;
+        margin: 0px;
+        display: block;
+        max-width: 35ch;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btn-bottom {
+        font-size: 0.6rem;
+    }
   }
+
+/* ------------------- Media queries between 600px and 799px -------------------------*/
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    h1 {
+        font-size: 1.9rem;
+        letter-spacing: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+.wrapper-top {
+    height: 80vh;
+}
+
+    .icon {
+        display: none;
+    }
+
+    .help-sign {
+        font-size: 1.5rem;
+    }
+
+    .recommendation-box {
+        font-size: 1.6rem;
+    }
+
+    .recommendation-text {
+        font-size:0.8rem;
+        padding: 0px 0px 0px 10px;
+    }
+
+    .recommendation-body {
+        padding: 0px 10px 0px 10px;
+        width: 530px;
+    }
+
+    .header-recommendations-section {
+        height: 150px;
+        padding-top: 0px;
+    }
+}
+
+/* ------------------- Media queries between 800px and 1024px -------------------------*/
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    .wrapper-top {
+        height: 60vh;
+    }
+
+    .recommendation-body {
+        padding: 0px 10px 0px 10px;
+        width: 530px;
+    }
+
+    .recommendation-text {
+        width: 440px;
+    }
+}
