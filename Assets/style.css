@@ -49,7 +49,7 @@ a:hover {
     color: white;
     background-color: rgba(47, 47, 47, 0.3);
     border-radius: 25px;
-    border: solid 1px red;
+    border: solid 1px transparent;
     padding: 10px 10px 10px 20px;
 }
 
@@ -58,7 +58,7 @@ a:hover {
     background-color: rgba(47, 47, 47, 0.6);
     color:white;
     border-radius: 25px;
-    border: solid 1px red;
+    border: solid 1px transparent;
     width: 350px;
     margin-top: 15px;
     padding: 5px 5px 5px 5px;
@@ -123,6 +123,114 @@ a:hover {
 /*--------------------------- END OFF <section #="what-choices"> -----------------------*/
 
 /* --------------------------- Recommendation section ----------------------------------*/
+
+/* new css for my own cards */
+.header-recommendations-section {
+    height: 150px;
+    padding-top: 35px;
+}
+
+.container-recommendations {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: auto;
+}
+
+.recommendations {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 0.25rem;
+}
+
+.recommendations-header {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.recommendation-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .recommendation {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: row; /* change this to column on smaller screens*/
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0, 0, 0, 0.125); */
+    border-radius: 0.25rem;
+    padding: 10px;
+}
+
+.recommendation-image-box {
+height: auto;
+width: auto;
+}
+
+.recommendation-image {
+    height: auto;
+    width: 100%;
+}
+
+.recommendation-body {
+    text-align: center;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.recommendation-title {
+    margin-bottom: 0.75rem;
+}
+
+.recommendation-text {
+
+}
+
+
+
+
+
+
+
+.container-hotel {
+    display: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hotel {
+    display: left;
+    height: 200px;
+    width: auto;
+}
+
+.hotel-text {
+    width: 20%;
+}
+
+.
+
+
+
 /* recommendations cards */
 .container-cards {                      
     display: inline-block;              
