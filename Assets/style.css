@@ -331,6 +331,10 @@ a:hover {
         text-overflow: ellipsis;
     }
 
+    .text-center {
+        padding: 0px 25px 0px 25px;
+    }
+
     .btn-bottom {
         font-size: 0.5rem;
     }
@@ -420,6 +424,10 @@ a:hover {
         height: 300px;
     }
 
+    .header-recommendations-section {
+        padding-top: 10px;
+    }
+
     .recommendation-text {
         font-size: 0.7rem;
         margin: 0px;
@@ -428,6 +436,10 @@ a:hover {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    .text-center {
+        padding: 0px 25px 0px 25px;
     }
 
     .btn-bottom {
@@ -477,6 +489,10 @@ a:hover {
         height: 150px;
         padding-top: 0px;
     }
+
+    .text-center {
+        padding: 0px 25px 0px 25px;
+    }
 }
 
 /* ------------------- Media queries between 800px and 1024px -------------------------*/
@@ -493,5 +509,14 @@ a:hover {
 
     .recommendation-text {
         width: 440px;
+    }
+
+    .header-recommendations-section {
+        height: 150px;
+        padding-top: 10px;
+    }
+
+    .text-center {
+        padding: 0px 40px 0px 40px;
     }
 }
