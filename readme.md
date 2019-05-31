@@ -23,7 +23,21 @@ The wireframe displays my sites structure both on a smartphone and on a desktop,
 
 The wireframe and mockup was made with [AdobeXd](https://www.adobe.com/#).
 
-You can take a look at the wireframe and mockup here: [WireframeAndMockUp](https://xd.adobe.com/view/071a08ba-0067-4139-493a-d2b49e5466d3-712b/)
+[VacationExplorer-Mockup/Wireframe](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Mockup_wireframe/Mockup_Wireframe.pdf)
+
+#### Wireframes - Smartphone and Desktop
+
+Here are my individual wireframes:
+
+1) [Smartphone](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Mockup_wireframe/Wireframe%20iPhone%20X.pdf)
+2) [Desktop](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Mockup_wireframe/Wireframe%20%20Desktop%201920x1080.pdf)
+
+#### Mockups - Smartphone and Desktop
+
+Here are my individual mockups:
+
+1) [Smartphone](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Mockup_wireframe/Mockup%20iPhone%20X.pdf)
+2) [Desktop](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Mockup_wireframe/Mockup%20Desktop%201920x1080.pdf)
 
 ### Features
 
