@@ -55,8 +55,8 @@
                             </span>
                         </div>
                         <br>
-                        <span class="search-box" id="search">
-                            <input class="search" type="text" placeholder="Type city...">
+                        <span class="search-box">
+                            <input id="search" class="search" type="text" placeholder="Type city...">
                             <a href="" class="search-btn"><i class="fas fa-search-location"></i></a>
                         </span>
                     </div>
@@ -69,6 +69,10 @@
         <div class="wrapper-bottom">
             <div class="header-recommendations-section">
                 <h2 class="text-center">Below are the recommendations from the category you checked above!</h2>
+            </div>
+            <div class="map-wrapper">
+                <div id="map"></div>
+                <span class="map-recommendations">Here goes the text</span>
             </div>
 
             <!--! container-recommendations is the wrapper container-->
@@ -256,21 +260,21 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap scripts. 1) jQuery core 3.4.1 slim,-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
 
-    <script>
-        /* Places API key */
-        var APIKey = "AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo"
-    </script>
+    <script src="./js/maps.js"></script>
+    <!-- Google maps scripts. -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?callback=createMap&libraries=places&key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo"
+        async defer></script>
 
-    https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Museum%20of%20Contemporary%20Art%20Australia&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=YOUR_API_KEY
+
 </body>
 
 </html>
