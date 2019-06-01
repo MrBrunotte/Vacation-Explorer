@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Milestone Project 2 @ Code Institute" />
+    <meta name="author" content="Stefan Brunotte" />
+
+    <title>Maps Two</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+
+<body>
+    <section #="what-choices">
+        <div class="wrapper-top">
+            <div class="image">
+                <section #="what-choices">
+                    <div class="text-center">
+                        <h1>
+                            <span class="header-box">Vacation explorer</span>
+                        </h1>
+                        <a class="help-sign" href="#" data-toggle="modal" data-target="#infoModal">?</a>
+                        <div class="choices">
+                            <span class="check-box">
+                                <i class="fas fa-bed icon"></i>
+                                <label class="recommendation-box">Hotel recommendations
+                                    <input class="box" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </span>
+                            <span class="check-box">
+                                <i class="fas fa-utensils icon"></i>
+                                <label class="recommendation-box">Restaurant recommendations
+                                    <input class="box" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </span>
+                            <span class="check-box">
+                                <i class="fas fa-music icon"></i>
+                                <label class="recommendation-box">What to do?
+                                    <input class="box" type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </span>
+                        </div>
+                        <br>
+                        <span class="search-box">
+                            <input id="search" class="search" type="text" placeholder="Type city...">
+                            <a href="" class="search-btn"><i class="fas fa-search-location"></i></a>
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section id="recommendations">
+        <div class="wrapper-bottom">
+            <div class="header-recommendations-section">
+                <h2 class="text-center">Below are the recommendations from the category you checked above!</h2>
+            </div>
+            <h3 class="recommendations-header">Hotel recommendations</h3>
+            <div id="map"></div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="top-link text-center">
+            <button class="btn btn-bottom"><a href="#">Back to top</a></button>
+        </div>
+    </footer>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="modal fade" id="infoModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2>How does it work?</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                <ol>
+                                                    <li>Check the boxes of your interest!</li>
+                                                    <li>Type the destination of your choise.</li>
+                                                </ol>
+                                                <p>Explore the recommendations near your destination below.</p>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <input class="btn btn-modal" data-dismiss="modal" value="Close">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap scripts. 1) jQuery core 3.4.1 slim,-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/mapstwo.js"></script>
+    <!-- Google maps scripts. -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=places&key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo"
+        async defer></script>
+
+
+
+</body>
+
+</html>
