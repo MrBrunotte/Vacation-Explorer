@@ -37,7 +37,7 @@ a:hover {
 /* map */
 
 #map {
-    height: 800px;
+    height: 1000px;
     width: auto;
     margin: 15px;
 }
@@ -100,6 +100,8 @@ a:hover {
     padding: 5px 5px 5px 5px;
 }
 
+
+
 .box {
     margin-left: 10px;
     border-color: #BC6612;
@@ -122,6 +124,24 @@ a:hover {
     margin-left: 10px;
 }
 
+.icon-search {
+    color: black;
+    margin-left: 15px;
+}
+
+.icon-search:active,
+.icon-search:hover,
+.icon-search:focus,
+.icon-search:active:focus {
+    color: #BC6612;
+    text-decoration: none;
+}
+
+.button {
+    background-color: #0e7be9;
+
+}
+
 .recommendation-box {
     color: white;
     margin-left: 10px;
@@ -142,7 +162,7 @@ a:hover {
     border-radius: 25px;
     width: 300px;
     letter-spacing: 0.1rem;
-    background-color: transparent;
+    background-color: #0000008f;
     color: white;
 }
 
@@ -150,10 +170,6 @@ a:hover {
     text-align: center;
 }
 
-.search-btn {
-    color: white;
-    padding-right: 15px;
-}
 
 /* modal popup*/
 .help-sign {
@@ -168,15 +184,7 @@ a:hover {
 /* new css for my own cards */
 .header-recommendations-section {
     height: 150px;
-    padding-top: 35px;
-}
-
-.container-recommendations {
-        width: 100%;
-        padding-right: 20px;
-        padding-left: 20px;
-        margin-right: auto;
-        margin-left: auto;
+    padding-top: 0px;
 }
 
 .recommendations {
@@ -199,13 +207,6 @@ a:hover {
     text-align: center;
     padding-bottom: 35px;
 }
-
-.recommendation-group {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
 
 .recommendation {
     position: relative;
@@ -294,9 +295,13 @@ a:hover {
         font-size: 0.9rem;
     }
 
-    .search {
+    .city {
         width: 182px;
         font-size: 0.7rem;
+    }
+
+    .search {
+        background-color: #000000b0;
     }
 
     .header-recommendations-section {
@@ -347,6 +352,10 @@ a:hover {
         margin: 15px;
     }
 
+    .search {
+        background-color: #000000b0;
+    }
+
     .header-recommendations-section {
         height: 100px;
         padding-top: 10px;
@@ -381,7 +390,7 @@ a:hover {
     }
 
     .header-box {
-        padding: 10px 10px 10px 10px;
+        color: black;
     }
 
     .wrapper-top {
@@ -405,7 +414,7 @@ a:hover {
         font-size: 1.1rem;
     }
 
-    .search {
+    .city {
         font-size: 0.75rem;
         text-align: center;
         border: none;
@@ -447,6 +456,10 @@ a:hover {
         height: 500px;
         width: auto;
         margin: 15px;
+    }
+
+    .search {
+        background-color: #000000b0;
     }
 
     .icon {

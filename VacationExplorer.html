@@ -8,7 +8,7 @@
     <meta name="description" content="Milestone Project 2 @ Code Institute" />
     <meta name="author" content="Stefan Brunotte" />
 
-    <title>Places Searchbox</title>
+    <title>Vacation Explorer</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="Assets/PlacesSearchBox.css">
+    <link rel="stylesheet" href="Assets/style.css">
 </head>
 
 <body>
@@ -55,8 +55,9 @@
                             </span>
                         </div>
                         <br>
-                        <span class="search-box">
-                            <input id="search" class="search" type="text" value="" placeholder="Type city...">
+                        <input id="search" class="search" type="text" value="" placeholder="Type city...">
+                        <span class="submit-icon">
+                            <br>
                             <i class="fas fa-search-location icon-search" type="button" id="submit" value="show"
                                 onclick="renderMap();"></i>
                         </span>
@@ -72,6 +73,9 @@
                 <h2 class="text-center">Below are the recommendations from the category you checked above!</h2>
             </div>
             <h3 class="recommendations-header">Recommendations</h3>
+            <div class="top-link text-center">
+                <button class="btn btn-bottom"><a href="#">Back to top</a></button>
+            </div>
             <div id="map"></div>
         </div>
     </section>
@@ -79,9 +83,7 @@
 
 
     <footer>
-        <div class="top-link text-center">
-            <button class="btn btn-bottom"><a href="#">Back to top</a></button>
-        </div>
+
     </footer>
 
     <div class="container-fluid">
@@ -101,6 +103,7 @@
                                                 <ol>
                                                     <li>Check the boxes of your interest!</li>
                                                     <li>Type the destination of your choise.</li>
+                                                    <li>Hit the search box and scroll down to the map!</li>
                                                 </ol>
                                                 <p>Explore the recommendations near your destination below.</p>
                                             </p>
@@ -126,10 +129,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="./js/PlacesSearchBox.js"></script>
+    <script src="./js/VacationExplorer.js"></script>
     <!-- Google maps scripts. -->
     <script
-        src="https://maps.googleapis.com/maps/api/js?radius=1500&type=hotel+restaurant+rankby+&key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&libraries=places&callback=initAutocomplete"
+        src="https://maps.googleapis.com/maps/api/js?radius=1500&type=hotel+restaurant+rankby+&key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&libraries=places&callback=initialize"
         async defer></script>
 
 </body>
