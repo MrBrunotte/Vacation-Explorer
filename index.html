@@ -31,36 +31,48 @@
                             <span class="header-box">Vacation explorer</span>
                         </h1>
                         <a class="help-sign" href="#" data-toggle="modal" data-target="#infoModal">?</a>
-                        <div class="choices">
-                            <span class="check-box">
-                                <i class="fas fa-bed icon"></i>
-                                <label class="recommendation-box">Find hotels
-                                    <input class="box" type="checkbox" value="hotel">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </span>
-                            <span class="check-box">
-                                <i class="fas fa-utensils icon"></i>
-                                <label class="recommendation-box">Find restaurants
-                                    <input class="box" type="checkbox" value="restaurant">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </span>
-                            <span class="check-box">
-                                <i class="fas fa-music icon"></i>
-                                <label class="recommendation-box">What to do?
-                                    <input class="box" type="checkbox" value="bar">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </span>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <form class="center-display" name="frm_map" id="frm_map">
+                                        <table>
+                                            <tr>
+                                                <th></th>
+                                                <td>
+                                                    <input class="search" type="text" name="address" id="address"
+                                                        value="" placeholder="Type city...">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <td>
+                                                    <input class="search" type="text" name="radius" id="radius" value=""
+                                                        placeholder="Search radius in kilometers">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <td>
+                                                    <i class="fas fa-bed icon"></i>
+                                                    <i class="fas fa-utensils icon"></i>
+                                                    <i class="fas fa-music icon"></i>
+                                                    <div class="type-holder" id="type_holder"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <input class="click-box" type="button" value="Search..." id="submit"
+                                                        onclick="renderMap();">
+                                                    <input class="click-box" type="reset" value="Reset">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                    <br>
+                                </div>
+                            </div>
                         </div>
-                        <br>
-                        <input id="search" class="search" type="text" value="" placeholder="Type city...">
-                        <span class="submit-icon">
-                            <br>
-                            <i class="fas fa-search-location icon-search" type="button" id="submit" value="show"
-                                onclick="renderMap();"></i>
-                        </span>
                     </div>
                 </section>
             </div>
@@ -70,7 +82,8 @@
     <section id="recommendations">
         <div class="wrapper-bottom">
             <div class="header-recommendations-section">
-                <h2 class="text-center">Below are the recommendations from the category you checked above!</h2>
+                <h2 class="text-center"> Below are the recommendations from the
+                    category you checked above! <i class="fas fa-arrow-down"></i></h2>
             </div>
             <h3 class="recommendations-header">Recommendations</h3>
             <div class="top-link text-center">
@@ -79,12 +92,6 @@
             <div id="map"></div>
         </div>
     </section>
-
-
-
-    <footer>
-
-    </footer>
 
     <div class="container-fluid">
         <div class="row">
@@ -99,14 +106,17 @@
                                             <h2>How does it work?</h2>
                                         </div>
                                         <div class="modal-body">
-                                            <p>
-                                                <ol>
-                                                    <li>Check the boxes of your interest!</li>
-                                                    <li>Type the destination of your choise.</li>
-                                                    <li>Hit the search box and scroll down to the map!</li>
-                                                </ol>
-                                                <p>Explore the recommendations near your destination below.</p>
-                                            </p>
+                                            <ol>
+                                                <li>Check the boxes of your interest!</li>
+                                                <li>Type the destination of your choise.</li>
+                                                <li>Type the radius of your search in kilometers (ex 5)</li>
+                                                <li>Hit the search box and scroll down to the map!</li>
+                                            </ol>
+                                            <p>Explore the recommendations near your
+                                                destination below.</p>
+                                            <p><strong>Hint!</strong></p>
+                                            <p>Zoom out to see more recommendations and zoom in to see more local
+                                                recommendations.</p>
                                         </div>
                                         <div class="modal-footer">
                                             <input class="btn btn-modal" data-dismiss="modal" value="Close">
@@ -129,7 +139,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="./js/VacationExplorer.js"></script>
+    <script src="./js/script.js"></script>
     <!-- Google maps scripts. -->
     <script
         src="https://maps.googleapis.com/maps/api/js?radius=1500&type=hotel+restaurant+rankby+&key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&libraries=places&callback=initialize"

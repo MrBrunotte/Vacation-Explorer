@@ -136,39 +136,42 @@
         <div id="map" style="width:900px; height:600px;"></div>
     </div>
 
-    <div style="float: left; width: 400;">
-        <form name="frm_map" id="frm_map">
-            <table>
-                <tr>
-                    <th>Address</th>
-                    <td>
-                        <input type="text" name="address" id="address" value="North Atlantic Ocean">
-                    </td>
-                </tr>
-                <tr>
-                    <th>Radius</th>
-                    <td>
-                        <input type="text" name="radius" id="radius" value="5" placeholder="In KM">
-                    </td>
-                </tr>
-                <tr>
-                    <th>Types</th>
-                    <td>
-                        <div id="type_holder" style="height: 200px; overflow-y: scroll;">
-                            <!-- Dynamic Content -->
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input type="button" value="Show" id="submit" onclick="renderMap();">
-                        <input type="reset" value="Reset">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
+
+    <form name="frm_map" id="frm_map">
+        <table>
+            <tr>
+                <th>Address</th>
+                <td>
+                    <input type="text" name="address" id="address" value="" placeholder="Type city...">
+                </td>
+            </tr>
+            <tr>
+                <th>Radius</th>
+                <td>
+                    <input type="text" name="radius" id="radius" value="5" placeholder="In KM">
+                </td>
+            </tr>
+            <tr>
+                <th>Types</th>
+                <td>
+                    <i class="fas fa-bed icon"></i>
+                    <i class="fas fa-utensils icon"></i>
+                    <i class="fas fa-music icon"></i>
+                    <div id="type_holder">
+                        <!-- Dynamic Content -->
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Show" id="submit" onclick="renderMap();">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
 
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&libraries=places&callback=initialize"

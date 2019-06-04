@@ -82,10 +82,7 @@ a:hover {
 
 /* boxes */
 .header-box {
-    color: white;
-    background-color: rgba(47, 47, 47, 0.3);
-    border-radius: 25px;
-    border: solid 1px transparent;
+    color: black;
     padding: 10px 10px 10px 20px;
 }
 
@@ -137,9 +134,21 @@ a:hover {
     text-decoration: none;
 }
 
+.click-box {
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    background-color: #0000008f;
+    color: #ffffff94;
+}
+
+.types {
+    margin: 5px;
+}
+
 .button {
     background-color: #0e7be9;
-
 }
 
 .recommendation-box {
@@ -158,16 +167,36 @@ a:hover {
 
 .search {
     text-align: center;
+    font-size: 1rem;
     border: none;
     border-radius: 25px;
-    width: 300px;
+    margin-bottom: 10px;
+    padding: 3px;
+    width: 400px;
     letter-spacing: 0.1rem;
     background-color: #0000008f;
-    color: white;
+    color: #ffffff94;
 }
 
 .search-box {
     text-align: center;
+}
+
+/* from codepen*/
+
+.type-holder {
+    color: white;
+    display: inline-block;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    }
+
+.center-display {
+    display: inline-block;
 }
 
 
@@ -179,9 +208,6 @@ a:hover {
 
 /*--------------------------- END OFF <section #="what-choices"> -----------------------*/
 
-/* --------------------------- Recommendation section ----------------------------------*/
-
-/* new css for my own cards */
 .header-recommendations-section {
     height: 150px;
     padding-top: 0px;
@@ -205,7 +231,6 @@ a:hover {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 35px;
 }
 
 .recommendation {
@@ -291,18 +316,24 @@ a:hover {
         display: none;
     }
 
-    .recommendation-box {
-        font-size: 0.9rem;
-    }
-
-    .city {
-        width: 182px;
-        font-size: 0.7rem;
-    }
-
     .search {
+        font-size: 0.75rem;
         background-color: #000000b0;
+        width: 250px;
     }
+
+label {
+    width: 90px;
+    font-size: 0.75rem;
+}
+
+.click-box {
+    font-size: 0.75rem;
+}
+
+.type-holder {
+    width: 95px;
+}
 
     .header-recommendations-section {
         height: 100px;
@@ -353,8 +384,23 @@ a:hover {
     }
 
     .search {
+        font-size: 0.75rem;
         background-color: #000000b0;
+        width: 250px;
     }
+
+label {
+    width: 90px;
+    font-size: 0.75rem;
+}
+
+.click-box {
+    font-size: 0.75rem;
+}
+
+.type-holder {
+    width: 95px;
+}
 
     .header-recommendations-section {
         height: 100px;
@@ -410,21 +456,6 @@ a:hover {
         font-size: 1.5rem;
     }
 
-    .recommendation-box {
-        font-size: 1.1rem;
-    }
-
-    .city {
-        font-size: 0.75rem;
-        text-align: center;
-        border: none;
-        border-radius: 25px;
-        width: 200px;
-        letter-spacing: 0.1rem;
-        background-color: transparent;
-        color: white;
-    }
-
     .modal-content {
         width: 300px;
         height: 300px;
@@ -459,8 +490,23 @@ a:hover {
     }
 
     .search {
+        font-size: 0.75rem;
         background-color: #000000b0;
+        width: 300px;
     }
+
+label {
+    width: 90px;
+    font-size: 0.75rem;
+}
+
+.click-box {
+    font-size: 0.75rem;
+}
+
+.type-holder {
+    width: 95px;
+}
 
     .icon {
         display: none;

@@ -11,23 +11,47 @@ function initMap() {
             center: { lat: location.lat, lng: location.long },      // center over the getCurrentPosition function!
             zoom: 15
         });
+        getBars(location);
+        getHotels(location);
         getRestaurants(location);           //calling the function to get restaurant locations on the map
         //getHotel(location);
     });
-
 }
 
 /* Function to find restaurant locations within a 3000 meter radius*/
+function getBars(location) {
+    var pyrmont = new google.maps.LatLng(location.lat, location.long);
+    var requestBar = {
+        location: pyrmont, // created above
+        radius: '2000',
+        type: ['bar']
+    };
+    service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(requestBar, callback);
+}
+
+function getHotels(location) {
+    var pyrmont = new google.maps.LatLng(location.lat, location.long);
+    var requestHotel = {
+        location: pyrmont, // created above
+        radius: '2000',
+        type: ['hotel']
+    };
+    service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(requestHotel, callback);
+}
+
 function getRestaurants(location) {
     var pyrmont = new google.maps.LatLng(location.lat, location.long);
     var requestRest = {
         location: pyrmont, // created above
-        radius: '3000',
+        radius: '2000',
         type: ['restaurant']
     };
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(requestRest, callback);
 }
+
 
 /* Function to create the search result: where is the restaurant, what price and rating*/
 function callback(results, status) {
@@ -43,7 +67,10 @@ function callback(results, status) {
             var marker = new google.maps.Marker({
                 position: place.geometry.location,
                 map: map,
-                title: place.name
+                title: place.name,
+                icon: 'http://maps.google.com/mapfiles/kml/pal2/icon19.png', //cocktail
+                icon: 'http://maps.google.com/mapfiles/kml/pal2/icon20.png', //hotel
+                icon: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png' //restaurant
             });
 
             var infowindow = new google.maps.InfoWindow({

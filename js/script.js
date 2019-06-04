@@ -18,7 +18,6 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-// create variables
 var map;
 var infowindow;
 var autocomplete;
@@ -26,14 +25,12 @@ var countryRestrict = { 'country': 'in' };
 var selectedTypes = [];
 
 function initialize() {
-    // atutocomplete the searches in the searchbox with googles "Autocomplete function"
-    autocomplete = new google.maps.places.Autocomplete((document.getElementById('search')), {
+    autocomplete = new google.maps.places.Autocomplete((document.getElementById('address')), {
         types: ['(regions)'],
         // componentRestrictions: countryRestrict
     });
 
-    // Starting positoin for map "Middle of the Atlantic" initialze variable "pyrmont"
-    var pyrmont = new google.maps.LatLng(36.198705, -23.446748);
+    var pyrmont = new google.maps.LatLng(35.7465, -39.4629);
 
     map = new google.maps.Map(document.getElementById('map'), {
         center: pyrmont,
@@ -41,10 +38,10 @@ function initialize() {
     });
 }
 
-// renderMap function
 function renderMap() {
-    // Get the user defined values (city)
-    var address = document.getElementById('search').value;
+    // Get the user defined values
+    var address = document.getElementById('address').value;
+    var radius = parseInt(document.getElementById('radius').value) * 1000;
 
     // get the selected type
     selectedTypes = [];
@@ -69,17 +66,16 @@ function renderMap() {
 
             var pyrmont = new google.maps.LatLng(selLocLat, selLocLng);
 
-            // Zooms down to 14 to see the 
             map = new google.maps.Map(document.getElementById('map'), {
                 center: pyrmont,
-                zoom: 14
+                zoom: 11
             });
 
             //console.log(selectedTypes);
 
             var request = {
                 location: pyrmont,
-                radius: 5000,
+                //radius: 5000,
                 //types: ["atm"]
                 radius: radius,
                 types: selectedTypes
@@ -96,7 +92,6 @@ function renderMap() {
     });
 }
 
-
 function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
         for (var i = 0; i < results.length; i++) {
@@ -108,14 +103,12 @@ function callback(results, status) {
 function createMarker(place, icon) {
     var placeLoc = place.geometry.location;
 
+    // Need to make a loop here to go throuhg the locations and pick the right icon!
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location,
-        icon: {
-            url: icon,
-            scaledSize: new google.maps.Size(20, 20) // pixels
-        },
-        // drops the marker on the map
+        type: ['restaurant'],
+        icon: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png', //fork and knive in a circle
         animation: google.maps.Animation.DROP
     });
 
