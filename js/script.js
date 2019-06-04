@@ -27,7 +27,6 @@ var selectedTypes = [];
 function initialize() {
     autocomplete = new google.maps.places.Autocomplete((document.getElementById('address')), {
         types: ['(regions)'],
-        // componentRestrictions: countryRestrict
     });
 
     var pyrmont = new google.maps.LatLng(35.7465, -39.4629);
@@ -57,26 +56,19 @@ function renderMap() {
 
     geocoder.geocode({ 'address': address }, function (results, status) {
         if (status === 'OK') {
-            //console.log(results[0].geometry.location.lat() + ' - ' + results[0].geometry.location.lng());
 
             selLocLat = results[0].geometry.location.lat();
             selLocLng = results[0].geometry.location.lng();
-
-            //var pyrmont = new google.maps.LatLng(52.5666644, 4.7333304);
 
             var pyrmont = new google.maps.LatLng(selLocLat, selLocLng);
 
             map = new google.maps.Map(document.getElementById('map'), {
                 center: pyrmont,
-                zoom: 11
+                zoom: 14
             });
-
-            //console.log(selectedTypes);
 
             var request = {
                 location: pyrmont,
-                //radius: 5000,
-                //types: ["atm"]
                 radius: radius,
                 types: selectedTypes
             };
@@ -111,6 +103,24 @@ function createMarker(place, icon) {
         icon: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png', //fork and knive in a circle
         animation: google.maps.Animation.DROP
     });
+
+    /* this is for the hotels and bars!
+
+    var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location,
+        type: ['hotel'],
+        icon: 'http://maps.google.com/mapfiles/kml/pal2/icon20.png', //fork and knive in a circle
+        animation: google.maps.Animation.DROP
+    });
+    var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location,
+        type: ['bar'],
+        icon: 'http://maps.google.com/mapfiles/kml/pal2/icon19.png', //fork and knive in a circle
+        animation: google.maps.Animation.DROP
+    });
+    */
 
     google.maps.event.addListener(marker, 'click', function () {
         infowindow.setContent(place.name + '<br>' + place.vicinity);

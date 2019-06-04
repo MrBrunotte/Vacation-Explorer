@@ -68,10 +68,51 @@ function callback(results, status) {
                 position: place.geometry.location,
                 map: map,
                 title: place.name,
-                icon: 'http://maps.google.com/mapfiles/kml/pal2/icon19.png', //cocktail
-                icon: 'http://maps.google.com/mapfiles/kml/pal2/icon20.png', //hotel
+                type: ['restaurant'],
                 icon: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png' //restaurant
             });
+
+            var infowindow = new google.maps.InfoWindow({
+                content: content
+            });
+
+            /* I want to add this!
+            function callback(results, status) {
+                if (status == google.maps.places.PlacesServiceStatus.OK) {
+                    for (var i = 0; i < results.length; i++) {
+                        var place = results[i];
+                        let price = createPrice(place.price_level);
+                        let content = `<h4>${place.name}</h4>
+                        <h5>${place.vicinity}</h5>
+                        <p>Price: ${price}</br>
+                        Rating: ${place.rating}`;
+
+                        var marker = new google.maps.Marker({
+                            position: place.geometry.location,
+                            map: map,
+                            title: place.name,
+                            type: ['bar'],
+                            icon: 'http://maps.google.com/mapfiles/kml/pal2/icon19.png', //cocktail
+                        });
+
+                        function callback(results, status) {
+                            if (status == google.maps.places.PlacesServiceStatus.OK) {
+                                for (var i = 0; i < results.length; i++) {
+                                    var place = results[i];
+                                    let price = createPrice(place.price_level);
+                                    let content = `<h4>${place.name}</h4>
+                                    <h5>${place.vicinity}</h5>
+                                    <p>Price: ${price}</br>
+                                    Rating: ${place.rating}`;
+
+                                    var marker = new google.maps.Marker({
+                                        position: place.geometry.location,
+                                        map: map,
+                                        title: place.name,
+                                        type: ['hotel'],
+                                        icon: 'http://maps.google.com/mapfiles/kml/pal2/icon20.png', //hotel
+                                    });
+                                    */
 
             var infowindow = new google.maps.InfoWindow({
                 content: content
