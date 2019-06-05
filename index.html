@@ -34,13 +34,16 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col">
-                                    <form class="center-display" name="frm_map" id="frm_map">
+                                    <div id="locationField">
+                                        <input id="autocomplete" placeholder="Enter a city" type="text" />
+                                    </div>
+                                    <!--<form class="center-display" name="frm_map" id="frm_map">
                                         <table>
                                             <tr>
                                                 <th></th>
                                                 <td>
-                                                    <input class="search" type="text" name="address" id="address"
-                                                        value="" placeholder="Type city...">
+                                                    <input class="search" type="text" name="city" id="city" value=""
+                                                        placeholder="Type city...">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -68,7 +71,7 @@
                                                 </td>
                                             </tr>
                                         </table>
-                                    </form>
+                                    </form>-->
                                     <br>
                                 </div>
                             </div>
@@ -137,10 +140,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
     <!-- Google maps scripts. -->
     <script
-        src="https://maps.googleapis.com/maps/api/js?radius=1500&type=hotel+restaurant+rankby+&key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&libraries=places&callback=initialize"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&libraries=places&callback=initMap"
         async defer></script>
 
 </body>

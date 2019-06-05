@@ -29,7 +29,7 @@ function initialize() {
         types: ['(regions)'],
     });
 
-    var pyrmont = new google.maps.LatLng(35.7465, -39.4629);
+    var pyrmont = new google.maps.LatLng(35.7465, -39.4629); //North Atlantic Ocean
 
     map = new google.maps.Map(document.getElementById('map'),
         {
@@ -40,8 +40,9 @@ function initialize() {
 
 function renderMap() {
     // Get the user defined values
-    var address = document.getElementById('address').value;
-    var radius = parseInt(document.getElementById('radius').value) * 1000;
+    var address = document.getElementById('city').value;
+
+    var radius = 20000;
 
     // get the selected type
     selectedTypes = [];
@@ -50,6 +51,8 @@ function renderMap() {
             selectedTypes.push($(this).val());
         }
     });
+
+    //console.log(selectedTypes);
 
     var geocoder = new google.maps.Geocoder();
     var selLocLat = 0;
@@ -86,6 +89,9 @@ function renderMap() {
 }
 
 function callback(results, status) {
+
+    console.log(status, 'testing', results);
+
     if (status == google.maps.places.PlacesServiceStatus.OK) {
         for (var i = 0; i < results.length; i++) {
             createMarker(results[i], results[i].icon);
@@ -104,24 +110,23 @@ function createMarker(place, icon) {
         icon: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png', //fork and knive in a circle
         animation: google.maps.Animation.DROP
     });
-
-    /* this is for the hotels and bars!
-
-    var marker = new google.maps.Marker({
-        map: map,
-        position: place.geometry.location,
-        type: ['hotel'],
-        icon: 'http://maps.google.com/mapfiles/kml/pal2/icon20.png', //fork and knive in a circle
-        animation: google.maps.Animation.DROP
-    });
-    var marker = new google.maps.Marker({
-        map: map,
-        position: place.geometry.location,
-        type: ['bar'],
-        icon: 'http://maps.google.com/mapfiles/kml/pal2/icon19.png', //fork and knive in a circle
-        animation: google.maps.Animation.DROP
-    });
-    */
+    /*this is for the hotels and bars!
+    
+        var marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location,
+            type: ['hotel'],
+            icon: 'http://maps.google.com/mapfiles/kml/pal2/icon20.png', //fork and knive in a circle
+            animation: google.maps.Animation.DROP
+        });
+        var marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location,
+            type: ['bar'],
+            icon: 'http://maps.google.com/mapfiles/kml/pal2/icon19.png', //fork and knive in a circle
+            animation: google.maps.Animation.DROP
+        });
+        */
 
     google.maps.event.addListener(marker, 'click', function () {
         infowindow.setContent(place.name + '<br>' + place.vicinity);

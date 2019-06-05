@@ -42,6 +42,20 @@ a:hover {
     margin: 15px;
 }
 
+#autocomplete {
+    width: 100%;
+  }
+
+  #locationField {
+    position: absolute;
+    width: 190px;
+    height: 25px;
+    left: 108px;
+    top: 0px;
+    z-index: 5;
+    background-color: #fff;
+  }
+
 
 .results-text {
     margin: 20px;
