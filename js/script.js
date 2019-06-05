@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // type_holder
-    // <div><label><input type="checkbox" class="types" value="mosque" />Mosque</label></div>
+    // <div><label><input type="checkbox" class="types" value="bar" />bar</label></div>
 
     //Create variable for the search hotel, restaurant and bar from the checkboxes in HTML file
     var types = ['hotel', 'restaurant', 'bar'];
@@ -31,10 +31,11 @@ function initialize() {
 
     var pyrmont = new google.maps.LatLng(35.7465, -39.4629);
 
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: pyrmont,
-        zoom: 3
-    });
+    map = new google.maps.Map(document.getElementById('map'),
+        {
+            center: pyrmont,
+            zoom: 3
+        });
 }
 
 function renderMap() {
