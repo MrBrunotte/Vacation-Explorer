@@ -3,12 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Milestone Project 2 @ Code Institute" />
-    <meta name="author" content="Stefan Brunotte" />
-
-    <title>Vacation Explorer</title>
+    <title>Center Align.html</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,28 +15,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="Assets/centerAlign.css">
+    <link rel="stylesheet" href="./Assets/style.css">
 </head>
 
 <body>
     <div class="wrapper-top">
         <div class="image">
             <div class="center-align">
-                <h1 class="header-box">Vacation explorer</h1>
+                <h1 class="header-box">Places to eat in New York</h1>
                 <a class="help-sign" href="#" data-toggle="modal" data-target="#infoModal">?</a>
-                <div>
-                    <i class="fas fa-bed icon"></i>
-                    <i class="fas fa-utensils icon"></i>
-                    <i class="fas fa-music icon"></i>
-                </div>
-
-                <div>
-                    <input type="text" class="controls" id="pac-input" placeholder="Type city...">
-                </div>
             </div>
         </div>
     </div>
-    <section>
+    <!--<section>
         <div>
             <div>
                 <h2> Below are the recommendations from the
@@ -47,9 +35,10 @@
             </div>
             <h3>Recommendations</h3>
             <button class="btn btn-bottom"><a href="#">Back to top</a></button>
-            <div id="map"></div>
-        </div>
-    </section>
+            
+    </section> -->
+    <div id="map"></div>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -60,18 +49,11 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h2>How does it work?</h2>
+                                            <h2>Click and find nearby restaurants and cafés!</h2>
                                         </div>
                                         <div class="modal-body">
-                                            <ol>
-                                                <li>Type the city of your choise.</li>
-                                                <li>Type the radius of your search in kilometers (ex 5)</li>
-                                                <li>Check the boxes of your interest!</li>
-                                                <li>Hit the search box and scroll down to the map!</li>
-                                            </ol>
-                                            <p>Click and explore the recommendations in the city of your choice.</p>
-                                            <p><strong>Hint!</strong></p>
-                                            <p>Zoom in to take a closer look at your recommendations</p>
+                                            <p>Walk the streets of New York <br>When you want a coffe or a bite to eat
+                                                right-click on the map and find nearby suggestions! </p>
                                         </div>
                                         <div class="modal-footer">
                                             <input class="btn btn-modal" data-dismiss="modal" value="Close">
@@ -94,12 +76,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="./js/script2.js"></script>
-    <!-- Google maps scripts. -->
+    <script src="./js/script.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&libraries=places&callback=initMap"
         async defer></script>
-
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 body {
     font-family: 'Oswald', sans-serif;
     text-align: center; 
+    background-color: rgba(179, 142, 136);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,7 +11,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1rem;
     padding-top: 70px;
 }
 
@@ -18,14 +18,28 @@ h2 {
     font-weight: bold;
     text-transform: capitalize;
     color: #BC6612;
+    margin: 10px;
+    padding: 10px 10px 0px 10px;
 }
 
-h3, h5, li, p {
+h3, h5 {
+    color: #BC6612;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+li, p {
+    text-transform: capitalize;
     color: #BC6612;
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -35,90 +49,44 @@ a:hover {
     text-decoration: none;
 }
 
-/*div {
-    width: 30%;
-    margin: 0 auto;
-}*/
-
-/* map */
-
 #map {
-    height: 1500px;
+    height: 900px;
     width: auto;
-    margin: 15px;
+    margin-top: 0px;
+    border: 5px solid #634841;
 }
 
-#autocomplete {
-    width: 100%;
-  }
-
-  #locationField {
-    position: absolute;
-    width: 190px;
-    height: 25px;
-    left: 108px;
-    top: 0px;
-    z-index: 5;
-    background-color: #fff;
-  }
-
-
-.results-text {
-    margin: 20px;
-    padding: 0px 10px 0px 10px;
-}
-
-.table {
-    position: relative;
-    color: #BC6612;
-    min-height:  360px;
-    width: auto;
-}
-
-.table-head {
-    font-size: 1rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-}
-
-
-/*--------------------------- <section #="what-choices"> -----------------------*/
-
-/* Wrapper for the background image */
 .wrapper-top {
-    height: 85vh;
+    height: 50vh;
     width: auto;
 }
-
 .image {
-    background-image: url("../Images/new-york.jpg");
+    background-image: url("/Images/new-york.jpg");
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center 50%;
     height: 100%;
 }
 
-/* boxes */
 .header-box {
-    color: black;
-    padding: 10px 10px 10px 20px;
+    color: white;
+    padding: 250px 10px 0px 20px;
 }
 
-.search-box {
-    text-align: center;
-    background-color: rgba(47, 47, 47, 0.6);
-    color:white;
-    border-radius: 25px;
-    border: solid 1px transparent;
-    width: 350px;
-    margin-top: 15px;
-    padding: 5px 5px 5px 5px;
+.help-sign {
+    color: white;
+    font-size: 3rem;
 }
 
-.box {
-    margin-left: 10px;
-    border-color: #BC6612;
+.center-align {
+   
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    margin-left: -30%;
 }
+
+/* ---------------- search input box -------------------------*/
 
 .modal-color {
     color: #BC6612;
@@ -132,359 +100,14 @@ a:hover {
     text-decoration: none;
 }
 
-.icon {
-    color: rgb(255, 255, 255);
-    margin-left: 10px;
+.modal-color {
+    color: #BC6612;
 }
 
-.icon-search {
-    color: black;
-    margin-left: 15px;
-}
-
-.icon-search:active,
-.icon-search:hover,
-.icon-search:focus,
-.icon-search:active:focus {
+.btn-modal:active,
+.btn-modal:hover,
+.btn-modal:focus,
+.btn-modal:active:focus {
     color: #BC6612;
     text-decoration: none;
-}
-
-.click-box {
-    text-align: center;
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
-    background-color: #0000008f;
-    color: #ffffff94;
-}
-
-.types {
-    margin: 5px;
-}
-
-.button {
-    background-color: #0e7be9;
-}
-
-.check-box {
-    margin-left: 20px;
-}
-
-.box {
-    margin-left: 10px;
-}
-
-.search {
-    text-align: center;
-    font-size: 1rem;
-    border: none;
-    border-radius: 25px;
-    margin-bottom: 10px;
-    padding: 3px;
-    width: 400px;
-    letter-spacing: 0.1rem;
-    background-color: #0000008f;
-    color: #ffffff94;
-}
-
-
-/* from codepen*/
-
-.type-holder {
-    color: white;
-    display: inline-block;
-    display: grid;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 0px;
-    }
-
-.center-display {
-    display: inline-block;
-}
-
-
-/* modal popup*/
-.help-sign {
-    color: rgba(46, 45, 45, 0.671);
-    font-size: 3rem;
-}
-
-/*--------------------------- END OFF <section #="what-choices"> -----------------------*/
-
-.header-recommendations-section {
-    height: 150px;
-    padding-top: 0px;
-}
-
-
-/* ----------------------------------MEDIA QUERIES -------------------------*/
-@media screen and (min-width: 1200px) {
-    .wrapper-bottom {
-        width: 100%;
-        padding-right: 100px;
-        padding-left: 100px;
-        margin-right: auto;
-        margin-left: auto;
-      }
-}
-
-
-/* -----------------------Media queries less than 330px -------------------------*/
-
-#map {
-    height: 500px;
-    width: auto;
-    margin: 15px;
-}
-
-@media screen and (max-width: 330px) {
-    h1 {
-        font-size: 1.1rem;
-        letter-spacing: 0.3rem;
-    }
-
-    h2, h3, h5 {
-        font-size: 0.9rem;
-    }
-
-    .help-sign {
-        font-size: 1.6rem;
-    }
-
-    .icon {
-        display: none;
-    }
-
-    .search {
-        font-size: 0.75rem;
-        background-color: #000000b0;
-        width: 250px;
-    }
-
-label {
-    width: 90px;
-    font-size: 0.75rem;
-}
-
-.click-box {
-    font-size: 0.75rem;
-}
-
-.type-holder {
-    width: 95px;
-}
-
-    .header-recommendations-section {
-        height: 100px;
-        padding-top: 10px;
-    }
-
-    .btn-bottom {
-        font-size: 0.5rem;
-        color: #BC6612;
-    }
-}
-
-/* -----------------------Media queries between 331px and 413px -------------------------*/
-@media screen and (min-width: 331px) and (max-width: 413px) {
-    h1 {
-        font-size: 1.1rem;
-        letter-spacing: 0.3rem;
-    }
-
-    h2, h3, h5 {
-        font-size: 0.9rem;
-    }
-
-    #map {
-        height: 500px;
-        width: auto;
-        margin: 15px;
-    }
-
-    .search {
-        font-size: 0.75rem;
-        background-color: #000000b0;
-        width: 250px;
-    }
-
-    label {
-        width: 90px;
-        font-size: 0.75rem;
-    }
-
-    .click-box {
-        font-size: 0.75rem;
-    }
-
-    .type-holder {
-        width: 95px;
-    }
-
-    .header-recommendations-section {
-        height: 100px;
-        padding-top: 10px;
-    }
-
-    .text-center {
-        padding: 0px 25px 0px 25px;
-    }
-
-    .btn-bottom {
-        font-size: 0.5rem;
-    }
-
-    .wrapper-top {
-        height: 85vh;
-        width: auto;
-    }
-
-    span.check-box {
-        display: block;
-    }
-
-    .icon {
-        display: none;
-    }
-
-    .help-sign {
-        font-size: 1.5rem;
-    }
-
-    .modal-content {
-        width: 300px;
-        height: 300px;
-    }
-
-    .btn-bottom {
-        font-size: 0.5rem;
-    }
-  }
-
-/* ------------------- Media queries between 414px and 599px -------------------------*/
-
-@media screen and (min-width: 414px) and (max-width: 599px) {
-    h1 {
-        font-size: 1.1rem;
-        letter-spacing: 0.3rem;
-    }
-    
-    h2 {
-        font-size: 1.2rem;
-        letter-spacing: 0.05rem;
-    }
-
-    h3 {
-        font-size: 1rem;
-    }
-
-    #map {
-        height: 500px;
-        width: auto;
-        margin: 15px;
-    }
-
-    .search {
-        font-size: 0.75rem;
-        background-color: #000000b0;
-        width: 300px;
-    }
-
-    label {
-        width: 90px;
-        font-size: 0.75rem;
-    }
-
-    .click-box {
-        font-size: 0.75rem;
-    }
-
-    .type-holder {
-        width: 95px;
-    }
-
-    .icon {
-        display: none;
-    }
-
-    .help-sign {
-        font-size: 1.5rem;
-    }
-
-    .wrapper-top {
-        height: 85vh;
-        width: auto;
-    }
-
-    .modal-content {
-        width: 300px;
-        height: 300px;
-    }
-
-    .header-recommendations-section {
-        padding-top: 10px;
-    }
-
-    .text-center {
-        padding: 0px 25px 0px 25px;
-    }
-
-    .btn-bottom {
-        font-size: 0.6rem;
-    }
-  }
-
-/* ------------------- Media queries between 600px and 799px -------------------------*/
-
-@media screen and (min-width: 600px) and (max-width: 799px) {
-    h1 {
-        font-size: 1.9rem;
-        letter-spacing: 0.5rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .wrapper-top {
-        height: 80vh;
-    }
-
-    .icon {
-        display: none;
-    }
-
-    .help-sign {
-        font-size: 1.5rem;
-    }
-
-    .header-recommendations-section {
-        height: 150px;
-        padding-top: 0px;
-    }
-
-    .text-center {
-        padding: 0px 25px 0px 25px;
-    }
-}
-
-/* ------------------- Media queries between 800px and 1024px -------------------------*/
-
-@media screen and (min-width: 800px) and (max-width: 1024px) {
-    .wrapper-top {
-        height: 60vh;
-    }
-
-    .header-recommendations-section {
-        height: 150px;
-        padding-top: 10px;
-    }
-
-    .text-center {
-        padding: 0px 40px 0px 40px;
-    }
 }
