@@ -1,8 +1,8 @@
-var request;            // moved the variables so that they have Global scope (local scope inside the functions)
-var service;            // Global scope means that they are can be accessed in the whole program!
+var request;                    // moved the variables so that they have Global scope (local scope inside the functions)
+var service;                    // Global scope means that they are can be accessed in the whole program!
 var markers = [];
 var map;
-var infoWindow;         // adds information to each marker when clicked
+var infoWindow;                 // adds information to each marker when clicked
 
 function initMap() {
     var center = new google.maps.LatLng(40.712776, -74.005974);
@@ -12,28 +12,29 @@ function initMap() {
     });
 
     // Modification of the initMap function (request, service and nearbySearch)
-    request = {                 //Create a variable called request so that Google can find what we are looking for.
+    request = {                             //Create a variable called request so that Google can find what we are looking for.
         location: center,
-        radius: 8047,               // five Mile in meters from center of map
-        types: ['restaurant', 'bakery', 'bar', 'cafe', 'night-club', 'museum', 'movie-theater', 'lodging']
+        radius: 8047,                       // five Mile in meters from center of map
+        types: ['restaurant', 'bakery', 'bar', 'cafe']
     };
 
-    infoWindow = new google.maps.InfoWindow();      //The googole maps InfoWindow function (InfoWindow is a constrfuctor!)
+    infoWindow = new google.maps.InfoWindow();                  //The googole maps InfoWindow function (InfoWindow is a constrfuctor!)
 
-    service = new google.maps.places.PlacesService(map);    // this object searches for our cafes and it is a function from google
+    service = new google.maps.places.PlacesService(map);        // this object searches for our cafes and it is a function from google
 
-    service.nearbySearch(request, callback);    // we use the nearbySearch function for the request and we use the callback method to check that everything runs ok.
+    service.nearbySearch(request, callback);                    // we use the nearbySearch function for the request and we use the callback method to check that everything runs ok.
 
-    google.maps.event.addListener(map, 'rightclick', function (event) { // added a listener for RightClicks and create a new search for cafes around that location.
+    google.maps.event.addListener(map, 'rightclick', function (event) {     // added a listener for RightClicks and create a new search for cafes around that location.
         map.setCenter(event.LatLng)
         clearResults(markers)
 
         var request = {
-            location: event.LatLng,                     // the center is now centered aroung the "rightclick"
+            location: event.LatLng,                             // the center is now centered aroung the "rightclick"
             radius: 8047,
-            types: ['restaurant', 'bakery', 'bar', 'cafe', 'night-club', 'museum', 'movie-theater', 'lodging']
+            iconImage: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png',     //fork and knife image
+            types: ['restaurant', 'bakery', 'bar', 'cafe']
         };
-        service.nearbySearch(request, callback);        // the nearbySearch functions request and makes the callback like the first time
+        service.nearbySearch(request, callback);                // the nearbySearch functions request and makes the callback like the first time
     })
 }
 
@@ -52,7 +53,7 @@ function createMarker(place) {
     var placeLoc = place.geometry.location;
     var marker = new google.maps.Marker({
         map: map,
-        //iconImage: 'http://maps.google.com/mapfiles/kml/pal2/icon54.png',     //Coffee mug
+        iconImage: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png',     //Coffee mug
         position: place.geometry.location,
         animation: google.maps.Animation.DROP
     });
