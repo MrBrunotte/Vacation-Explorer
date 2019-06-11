@@ -1,0 +1,135 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    text-align: center; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    padding-top: 70px;
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #BC6612;
+    margin: 10px;
+}
+
+h3, h5 {
+    color: #BC6612;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+li, p {
+    text-transform: capitalize;
+    color: #BC6612;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    color: #BC6612;
+    text-decoration: none;
+}
+
+#map {
+    height: 800px;
+    width: auto;
+    margin: 15px;
+}
+
+.wrapper-top {
+    height: 70vh;
+    width: auto;
+}
+.image {
+    background-image: url("/Images/new-york.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    height: 100%;
+}
+
+.header-box {
+    color: black;
+    padding: 70px 10px 10px 20px;
+}
+
+.help-sign {
+    color: rgba(46, 45, 45, 0.671);
+    font-size: 3rem;
+}
+
+.center-align {
+   
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    margin-left: -30%;
+}
+
+/* ---------------- search input box -------------------------*/
+
+#pac-input {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    width: 400px;
+}
+
+/*.search {
+    display: inline-block center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    width: 400px;
+    letter-spacing: 0.1rem;
+    background-color: #0000008f;
+    color: #ffffff94;
+}*/
+
+.modal-color {
+    color: #BC6612;
+}
+
+.btn-modal:active,
+.btn-modal:hover,
+.btn-modal:focus,
+.btn-modal:active:focus {
+    color: #BC6612;
+    text-decoration: none;
+}
+
+.modal-color {
+    color: #BC6612;
+}
+
+.btn-modal:active,
+.btn-modal:hover,
+.btn-modal:focus,
+.btn-modal:active:focus {
+    color: #BC6612;
+    text-decoration: none;
+}
+.icon {
+    color: black;
+    margin-left: 10px;
+    margin: 15px;
+}

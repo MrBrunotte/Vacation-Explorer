@@ -1,5 +1,6 @@
 body {
     font-family: 'Oswald', sans-serif;
+    text-align: center; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,6 +34,11 @@ a:hover {
     color: #BC6612;
     text-decoration: none;
 }
+
+/*div {
+    width: 30%;
+    margin: 0 auto;
+}*/
 
 /* map */
 
@@ -84,8 +90,6 @@ a:hover {
     width: auto;
 }
 
-
-
 .image {
     background-image: url("../Images/new-york.jpg");
     background-size: cover; 
@@ -110,8 +114,6 @@ a:hover {
     margin-top: 15px;
     padding: 5px 5px 5px 5px;
 }
-
-
 
 .box {
     margin-left: 10px;
@@ -186,9 +188,6 @@ a:hover {
     color: #ffffff94;
 }
 
-.search-box {
-    text-align: center;
-}
 
 /* from codepen*/
 
@@ -221,12 +220,6 @@ a:hover {
     padding-top: 0px;
 }
 
-.recommendations-header {
-
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
 
 /* ----------------------------------MEDIA QUERIES -------------------------*/
 @media screen and (min-width: 1200px) {

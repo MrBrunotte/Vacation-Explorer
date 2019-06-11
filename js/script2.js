@@ -1,3 +1,10 @@
+var map, places, infoWindow;
+var markers = [];
+var autocomplete;
+var countryRestrict = { 'country': [] };
+var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
+var hostnameRegexp = new RegExp('^https?://.+?/');
+
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -19,7 +26,7 @@ function initMap() {
             /** @type {!HTMLInputElement} */(
             document.getElementById('autocomplete')), {
             types: ['(cities)'],
-            componentRestrictions: { 'country': [] }
+            componentRestrictions: { countryRestrict }
         });
     places = new google.maps.places.PlacesService(map);
 

@@ -18,12 +18,6 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-var map;
-var infowindow;
-var autocomplete;
-var countryRestrict = { 'country': 'in' };
-var selectedTypes = [];
-
 function initialize() {
     autocomplete = new google.maps.places.Autocomplete((document.getElementById('address')), {
         types: ['(regions)'],
@@ -39,6 +33,11 @@ function initialize() {
 }
 
 function renderMap() {
+    var map;
+    var infowindow;
+    var autocomplete;
+    var countryRestrict = { 'country': 'in' };
+    var selectedTypes = [];
     // Get the user defined values
     var address = document.getElementById('city').value;
 
