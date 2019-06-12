@@ -8,13 +8,13 @@ function initMap() {
     var center = new google.maps.LatLng(40.712776, -74.005974);
     map = new google.maps.Map(document.getElementById('map'), {
         center: center,
-        zoom: 13
+        zoom: 15
     });
 
     // Modification of the initMap function (request, service and nearbySearch)
     request = {                             //Create a variable called request so that Google can find what we are looking for.
         location: center,
-        radius: 8047,                       // five Mile in meters from center of map
+        radius: 1000,                       // 2000 meters from center of map
         types: ['restaurant', 'bakery', 'bar', 'cafe']
     };
 
@@ -25,14 +25,14 @@ function initMap() {
     service.nearbySearch(request, callback);                    // we use the nearbySearch function for the request and we use the callback method to check that everything runs ok.
 
     google.maps.event.addListener(map, 'rightclick', function (event) {     // added a listener for RightClicks and create a new search for cafes around that location.
-        map.setCenter(event.LatLng)
-        clearResults(markers)
+        map.setCenter(event.latLng)
+        clearResults(markers)                                   //Centers the map to the right-click position
 
         var request = {
-            location: event.LatLng,                             // the center is now centered aroung the "rightclick"
-            radius: 8047,
-            iconImage: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png',     //fork and knife image
-            types: ['restaurant', 'bakery', 'bar', 'cafe']
+            location: event.latLng,                             // the center is now centered aroung the "rightclick"
+            radius: 1000,                                       // the radius is 2000 meters from the click
+            //iconImage: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png',     //fork and knife image
+            types: ['restaurant']
         };
         service.nearbySearch(request, callback);                // the nearbySearch functions request and makes the callback like the first time
     })
@@ -72,4 +72,4 @@ function clearResults(markers) {                // This function clears all the 
     }
     markers = []                                // sets the marker array to empty everytime the user "rightClicks"
 }
-google.maps.event.addDomListener(window, 'load', initMap);
+//google.maps.event.addDomListener(window, 'load', initMap); //Dont need this line since I already have the script src in the index file!
