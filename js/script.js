@@ -32,7 +32,7 @@ function initMap() {
             location: event.latLng,                             // the center is now centered aroung the "rightclick"
             radius: 1000,                                       // the radius is 2000 meters from the click
             //iconImage: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png',     //fork and knife image
-            types: ['restaurant']
+            types: ['restaurant', 'bakery', 'bar', 'cafe']
         };
         service.nearbySearch(request, callback);                // the nearbySearch functions request and makes the callback like the first time
     })
