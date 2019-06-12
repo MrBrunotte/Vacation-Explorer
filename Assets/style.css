@@ -61,7 +61,7 @@ a:hover {
     width: auto;
 }
 .image {
-    background-image: url("/Images/new-york.jpg");
+    background-image: url("../Images/new-york.jpg");
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center 50%;
