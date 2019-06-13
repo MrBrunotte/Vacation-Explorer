@@ -12,6 +12,7 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 70px;
+    font-size: 4.5rem;
 }
 
 h2 {
@@ -50,7 +51,7 @@ a:hover {
 }
 
 #map {
-    height: 900px;
+    height: 600px;
     width: auto;
     margin-top: 0px;
     border: 5px solid #634841;
@@ -60,6 +61,7 @@ a:hover {
     height: 50vh;
     width: auto;
 }
+
 .image {
     background-image: url("../Images/new-york.jpg");
     background-size: cover; 
@@ -70,7 +72,8 @@ a:hover {
 
 .header-box {
     color: white;
-    padding: 250px 10px 0px 20px;
+    padding: 220px 10px 0px 20px;
+    margin: 0px;
 }
 
 .help-sign {
@@ -81,12 +84,25 @@ a:hover {
 .center-align {
    
     position: absolute;
-    width: 60%;
+    width: 100%;
     left: 50%;
-    margin-left: -30%;
+    margin-left: -50%;
 }
 
-/* ---------------- search input box -------------------------*/
+/* ---------------- Modal -------------------------*/
+.btn-modal {
+    font-size: 0.5rem;
+}
+
+.modal-header, 
+.modal-body, 
+.modal-footer {
+    padding: 5px 10px 5px 10px;
+}
+
+.modal-color {
+    color: #BC6612;
+}
 
 .modal-color {
     color: #BC6612;
@@ -100,14 +116,78 @@ a:hover {
     text-decoration: none;
 }
 
-.modal-color {
-    color: #BC6612;
+
+
+/* ---------- MEDIA QUERIES -------------*/
+
+@media only screen and (max-width: 998px) and (min-width: 698px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .wrapper-top {
+        height: 50vh;
+        width: auto;
+    }
+
+    .header-box {
+        padding: 140px 10px 0px 20px;
+    }
+
+    .help-sign {
+        font-size: 2.5rem;
+    }
+
+    #map {
+        height: 900px;
+        width: auto;
+    }
 }
 
-.btn-modal:active,
-.btn-modal:hover,
-.btn-modal:focus,
-.btn-modal:active:focus {
-    color: #BC6612;
-    text-decoration: none;
+@media only screen and (max-width: 697px) and (min-width: 530px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .wrapper-top {
+        height: 50vh;
+        width: auto;
+    }
+
+    .header-box {
+        padding: 140px 10px 0px 20px;
+    }
+
+    .help-sign {
+        font-size: 2.5rem;
+    }
+
+    #map {
+        height: 900px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 529px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .wrapper-top {
+        height: 50vh;
+        width: auto;
+    }
+
+    .header-box {
+        padding: 140px 10px 0px 20px;
+    }
+
+    .help-sign {
+        font-size: 1.5rem;
+    }
+
+    #map {
+        height: 900px;
+        width: auto;
+    }
 }

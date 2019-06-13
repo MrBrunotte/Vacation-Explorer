@@ -1,75 +1,112 @@
-var request;                    // moved the variables so that they have Global scope (local scope inside the functions)
-var service;                    // Global scope means that they are can be accessed in the whole program!
+var request;
+var service;
 var markers = [];
 var map;
-var infoWindow;                 // adds information to each marker when clicked
+var infoWindow;
 
 function initMap() {
     var center = new google.maps.LatLng(40.712776, -74.005974);
     map = new google.maps.Map(document.getElementById('map'), {
         center: center,
-        zoom: 15
+        zoom: 15,
+        disableDefaultUI: true
+
     });
 
-    // Modification of the initMap function (request, service and nearbySearch)
-    request = {                             //Create a variable called request so that Google can find what we are looking for.
+    request = {
         location: center,
-        radius: 1000,                       // 2000 meters from center of map
-        types: ['restaurant', 'bakery', 'bar', 'cafe']
+        radius: 1000,
+        types: ['restaurant', 'cafe', 'bar']
     };
+    //console.log(request)
 
-    infoWindow = new google.maps.InfoWindow();                  //The googole maps InfoWindow function (InfoWindow is a constrfuctor!)
+    infoWindow = new google.maps.InfoWindow();
+    service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, callback);
 
-    service = new google.maps.places.PlacesService(map);        // this object searches for our cafes and it is a function from google
-
-    service.nearbySearch(request, callback);                    // we use the nearbySearch function for the request and we use the callback method to check that everything runs ok.
-
-    google.maps.event.addListener(map, 'rightclick', function (event) {     // added a listener for RightClicks and create a new search for cafes around that location.
+    google.maps.event.addListener(map, 'rightclick', function (event) {
         map.setCenter(event.latLng)
-        clearResults(markers)                                   //Centers the map to the right-click position
+        clearResults(markers)
 
         var request = {
-            location: event.latLng,                             // the center is now centered aroung the "rightclick"
-            radius: 1000,                                       // the radius is 2000 meters from the click
-            //iconImage: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png',     //fork and knife image
-            types: ['restaurant', 'bakery', 'bar', 'cafe']
+            location: event.latLng,
+            radius: 1000,
+            types: ['restaurant', 'cafe', 'bar']
         };
-        service.nearbySearch(request, callback);                // the nearbySearch functions request and makes the callback like the first time
+        service.nearbySearch(request, callback);
     })
 }
 
-// create the callback function which is called from the service object: service.nearbySearch
-// The function checks that everything is ok and adds all the results in the results variable
+
 function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
         for (var i = 0; i < results.length; i++) {
             markers.push(createMarker(results[i]));
+
+            //! new code from today
+            console.log(results)
+            var place = results[i];
+            let price = createPrice(place.price_level);
+            let content =
+                `<h4>${place.name}<h4>
+             <h5>${place.vicinity}<h5>
+             <p>Price: ${price}<br>
+             Rating: ${place.rating}`;
+            var marker = new google.maps.Marker({
+                position: place.geometry.location,
+                map: map,
+                title: place.name
+            });
+
+            infoWindow = new google.maps.InfoWindow({
+                content: content
+            });
+            //console.log(infoWindow)
+
+            bindInfoWindow(marker, map, infoWindow, content);
         }
     }
 }
 
-// create the createMarker function that creates and place the markers on the map based on the results from the createMarker function
+//!New code from today
+function createPrice(level) {
+    if (level != "" && level != null) {
+        let out = "";
+        for (var x = 0; x < level; x++) {
+            out += "$";
+        }
+        return out;
+    } else {
+        return "?";
+    }
+}
+
+//!New code from today
+function bindInfoWindow(marker, map, infoWindow, html) {
+    google.maps.event.addListener(marker, 'click', function () {
+        infoWindow.setContent(html);
+        infoWindow.open(map, marker);
+    });
+}
+
 function createMarker(place) {
-    var placeLoc = place.geometry.location;
     var marker = new google.maps.Marker({
         map: map,
-        iconImage: 'http://maps.google.com/mapfiles/kml/pal2/icon55.png',     //Coffee mug
         position: place.geometry.location,
         animation: google.maps.Animation.DROP
     });
 
-    google.maps.event.addListener(marker, 'click', function () { //This listener listens for "clicks" on the map
+    google.maps.event.addListener(marker, 'click', function () {
 
-        infoWindow.setContent(place.name);      // gets the name of the location of the clicked marker
-        infoWindow.open(map, this);             // opens the info on the marker that is clicked ("this" one)
+        infoWindow.setContent(place.name);
+        infoWindow.open(map, this);
     });
-    return marker;                              // returns the markers 
+    return marker;
 }
 
-function clearResults(markers) {                // This function clears all the markers when the user "rightClicks"
+function clearResults(markers) {
     for (var m in markers) {
         markers[m].setMap(null)
     }
-    markers = []                                // sets the marker array to empty everytime the user "rightClicks"
+    markers = []
 }
-//google.maps.event.addDomListener(window, 'load', initMap); //Dont need this line since I already have the script src in the index file!
