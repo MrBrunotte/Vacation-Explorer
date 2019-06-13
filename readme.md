@@ -1,4 +1,4 @@
-# Vacation Explorer
+# Places to eat at in New York
 
 Vacation explorer makes recommendations to the user based on the chosen city. It can be used to find hotels, restaurants and what to do in a particular city.
 This is a webpage that is simple and intuiative for the user to use, the intention is to have a clean and simple layout so that the user will not be confused and not know what to do when visiting the page.
