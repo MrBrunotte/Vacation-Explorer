@@ -7,18 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Places New York</title>
 
+    <!--! Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
+    <!--! Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+    <!--! styling file CSS-->
     <link rel="stylesheet" href="./Assets/style.css">
 </head>
 
 <body>
+    <!--! the top of the page with background image and where the modal goes-->
     <div class="wrapper-top">
         <div class="image" alt="Image of New York">
             <div class="center-align">
@@ -27,9 +28,10 @@
             </div>
         </div>
     </div>
-
+    <!--! here goes the map-->
     <div id="map"></div>
 
+    <!--! modal setting-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -61,7 +63,7 @@
         </div>
     </div>
 
-    <!-- Bootstrap scripts. 1) jQuery core 3.4.1 slim,-->
+    <!--! Bootstrap scripts. 1) jQuery core 3.4.1 slim,-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
         integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
@@ -69,7 +71,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <!--! My script file-->
     <script src="./js/script.js"></script>
+    <!--! Google maps libraries and my API key-->
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&libraries=places&callback=initMap"
         async defer></script>
