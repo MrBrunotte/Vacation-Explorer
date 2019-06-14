@@ -41,7 +41,7 @@ Here are my individual mockups:
 
 ### Features
 
-There are mainly two features that the user needs to interact with before getting a result: 
+There are mainly two features that the user needs to interact with before getting a result:
 
 1) Choosing the category of interest, and
 2) typing the city of interest!
