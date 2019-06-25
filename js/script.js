@@ -26,7 +26,7 @@ function initMap() {                                                //function t
     google.maps.event.addListener(map, 'rightclick', function (event) {     //add listener for 'right-clicks' on the map
         map.setCenter(event.latLng)
         clearResults(markers)                                       //clear 'old' markers from map after 'right-click'
-
+        console.log(markers)
         var request = {                                             //new search request after 'right-click'
             location: event.latLng,
             radius: 1000,
@@ -103,5 +103,5 @@ function clearResults(markers) {                                    //!function 
     for (var m in markers) {
         markers[m].setMap(null)
     }
-    markers = []
+    markers = [];
 }

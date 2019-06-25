@@ -1,0 +1,214 @@
+    html,
+    body {
+        font-family: 'Oswald', sans-serif;
+        color: #BC6612;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6, a {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 70px;
+        font-size: 4.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    #map {
+        position: fixed;
+        width: 100%;
+        height: 400px;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        display: block;
+    }
+
+    #listing {
+        display: block;
+        height: 400px;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        cursor: pointer;
+        overflow-x: auto;
+        border: 1px solid black;
+    }
+
+    #findhotels {
+        position: absolute;
+        text-align: right;
+        width: 100px;
+        font-size: 14px;
+        padding: 4px;
+        z-index: 5;
+        background-color: #fff;
+    }
+
+    #locationField {
+        position: absolute;
+        width: 200px;
+        height: 25px;
+        z-index: 5;
+        background-color: #fff;
+        text-align: center;
+        margin: auto;
+    }
+
+    #autocomplete {
+        width: 100%;
+    }
+
+    #country {
+        width: 100%;
+    }
+
+    /* navbar */
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+    }
+
+    .nav-link:focus, .nav-link:hover {
+        text-decoration: none;
+        color: #BC6612;
+    }
+
+    a:hover {
+        color: #BC6612 !important;
+        text-decoration: none;
+    }
+
+    .wrapper-top {
+        margin-top: 10px;
+        height: 50vh;
+        width: auto;
+    }
+
+    .header-text1 {
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        padding: 140px 0px;
+    }
+
+    .header-text {
+        color: white;
+        text-align: center;
+        margin: 1em;
+        padding: 140px 0px;
+    }
+
+    .information-text {
+        text-align: center;
+        margin: 1em;
+        padding: 1em;
+    }
+
+/* # main-buttons*/
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#controls {
+    margin: 1em;
+    display: inline-block;
+}
+
+.form-group {
+    margin: 0px;
+    display: inline-block;
+}
+
+span.inline-span-block {
+    display: inline-block;
+    padding: 20px;
+}
+
+#country, #autocomplete {
+    color: #BC6612;
+    min-width: 260px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+    .placeIcon {
+        width: 20px;
+        height: 34px;
+        margin: 4px;
+    }
+
+    .hotelIcon {
+        width: 24px;
+        height: 24px;
+    }
+
+    #resultsTable {
+        border-collapse: collapse;
+        width: 240px;
+    }
+
+    #rating {
+        font-size: 13px;
+        font-family: Arial Unicode MS;
+    }
+
+    .image {
+        background-image: url("../Images/new-york.jpg");
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center 50%;
+        height: 100%;
+    }
+
+    .iw_table_row {
+        font-family: 'Oswald', sans-serif;
+        height: 18px;
+    }
+
+    .iw_attribute_name {
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .iw_table_icon {
+        text-align: right;
+    }
+
+    .iw-address,
+    .iw-phone-row,
+    .iw_attribute_name,
+    .iw-phone {
+        font-family: 'Oswald', sans-serif;
+    }
