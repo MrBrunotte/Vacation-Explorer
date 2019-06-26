@@ -1,193 +1,274 @@
-body {
-    font-family: 'Oswald', sans-serif;
-    text-align: center; 
-    background-color: rgba(179, 142, 136);
+    html,
+    body {
+        font-family: 'Oswald', sans-serif;
+        color: #BC6612;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 70px;
+        font-size: 4.5rem;
+    }
+
+    h1, h2, h3, h4, h5, h6, a {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    a {
+        color:#BC6612;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: white;
+        text-decoration: none;
+        background-color: hsla(0, 0%, 0%, 0.664);
+    }
+
+    p {
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+/* -----------------------------# ID's------------------------------- */
+
+    #search {
+        height: 966px;
+        background-color: rgba(128, 128, 128, 0.315);
+    }
+
+    #map,
+    #listing {
+        height: 450px;
+    }
+
+    #map {
+        position: fixed;
+        width: 100%;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        display: block;
+    }
+
+    #listing {
+        background-image: url("../Images/find-local.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+        display: block;
+        padding: 0;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        cursor: pointer;
+        overflow-x: auto;
+        width: 571px;
+    }
+
+    #controls {
+        margin: 1em;
+        display: inline-block;
+    }
+
+    #country, #autocomplete {
+        color: #444;
+        background-color: #f2f2f2;
+        min-width: 260px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    #hotel-button,
+    #restaurant-button,
+    #bar-button {
+        width: 170px;
+    }
+
+    #results {
+        width: 540px;
+    }
+    
+    #rating {
+        font-size: 13px;
+        font-family: Arial Unicode MS;
+    }
+
+
+    /* --------------------------- CLASSES --------------------*/
+    .info-text{
+        font-size: 1rem;
+    }
+
+    .image {
+        background-image: url("../Images/street2.jpg");
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center 50%;
+        height: 100%;
+    }
+
+    .star {
+        padding-left: 16px;
+        vertical-align: middle;
+    }
+
+    .placeIcon {
+        width: 20px;
+        height: 34px;
+        margin: auto;
+    }
+
+    .icon {
+        height: 28px;
+        width: 28px;
+        vertical-align: middle;
+        margin: 5px;
+    }
+
+    .container-fluid {
+        padding: 10px 50px 10px 50px;
+    }
+
+    .picture-overlay {
+        display: block;
+        width: 320px;
+        height: 240px;
+        margin: 80px auto 0 auto;
+    }
+
+    .img {
+        vertical-align: middle;
+        border-style: none;
+    }
+
+    .text-center {
+        padding: 20px;
+    }
+
+    .wrapper-top {
+        height: 100vh;
+        width: auto;
+    }
+
+    .header-text {
+        color: white;
+        text-align: center;
+        padding: 270px 0px;
+    }
+
+    .header-band {
+        height: 350px;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .information-text {
+        text-align: center;
+        padding: 1em;
+    }
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Condensed', sans-serif;
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
-h1 {
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-top: 70px;
-    font-size: 4.5rem;
+.form-group {
+    margin: 1em;
+    display: inline-block;
 }
 
-h2 {
-    font-weight: bold;
-    text-transform: capitalize;
-    color: #BC6612;
-    margin: 10px;
-    padding: 10px 10px 0px 10px;
-}
-
-h3, h5 {
-    color: #BC6612;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 20px;
-}
-
-h3 {
-    margin: 0px;
-}
-
-li, p {
-    text-transform: capitalize;
-    color: #BC6612;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:active,
-a:hover {
-    color: #BC6612;
-    text-decoration: none;
-}
-
-#map {
-    height: 600px;
-    width: auto;
-    margin-top: 0px;
-    border: 5px solid #634841;
-}
-
-.wrapper-top {
-    height: 50vh;
-    width: auto;
-}
-
-.image {
-    background-image: url("../Images/new-york.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center 50%;
-    height: 100%;
-}
-
-.header-box {
-    color: white;
-    padding: 220px 10px 0px 20px;
-    margin: 0px;
-}
-
-.help-sign {
-    color: white;
-    font-size: 3rem;
-}
-
-
-.center-align {
-    position: absolute;
+.form-control {
+    display: block;
     width: 100%;
-    left: 50%;
-    margin-left: -50%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ececec;
+    background-clip: padding-box;
+    border: 1px solid #BC6612;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-/* ---------------- Modal -------------------------*/
-.btn-modal {
-    font-size: 0.5rem;
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #BC6612;
+    outline: 0;
+    box-shadow: none;
 }
 
-.modal-header, 
-.modal-body, 
-.modal-footer {
-    padding: 5px 10px 5px 10px;
-}
-
-.modal-color {
-    color: #BC6612;
-}
-
-.modal-color {
-    color: #BC6612;
-}
-
-.btn-modal:active,
-.btn-modal:hover,
-.btn-modal:focus,
-.btn-modal:active:focus {
-    color: #BC6612;
-    text-decoration: none;
-}
-
-
-
-/* ---------- MEDIA QUERIES -------------*/
-
-@media only screen and (max-width: 998px) and (min-width: 698px) {
-    h1 {
-        font-size: 3rem;
+    .button {
+        color: white;
+        font-size: 40px;
+        background-color: hsla(0, 0%, 44%, 0.1);
+        min-width: 260px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 0px 10px 0px 10px;
     }
 
-    .wrapper-top {
-        height: 50vh;
-        width: auto;
+    .button-bottom {
+        color: white;
+        font-size: 20px;
+        background-color: hsla(0, 0%, 44%, 0.1);
+        min-width: 260px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 0px 10px 0px 10px;
     }
 
-    .header-box {
-        padding: 140px 10px 0px 20px;
+    .btn-top{
+        text-align: center;
     }
 
-    .help-sign {
-        font-size: 2.5rem;
+    .btn {
+        color:#BC6612;
     }
 
-    #map {
-        height: 900px;
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 697px) and (min-width: 530px) {
-    h1 {
-        font-size: 2.2rem;
+    .btn:hover {
+        color: black;
+        text-decoration: none;
     }
 
-    .wrapper-top {
-        height: 50vh;
-        width: auto;
+    .hotelIcon {
+        width: 24px;
+        height: 24px;
     }
 
-    .header-box {
-        padding: 140px 10px 0px 20px;
+    .iw_table_row {
+        font-family: 'Oswald', sans-serif;
+        height: 18px;
     }
 
-    .help-sign {
-        font-size: 2.5rem;
+    .iw_attribute_name {
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        text-align: right;
     }
 
-    #map {
-        height: 900px;
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 529px) {
-    h1 {
-        font-size: 1.75rem;
+    .iw_table_icon {
+        text-align: right;
     }
 
-    .wrapper-top {
-        height: 50vh;
-        width: auto;
+    .iw-address,
+    .iw-phone-row,
+    .iw_attribute_name,
+    .iw-phone {
+        font-family: 'Oswald', sans-serif;
     }
-
-    .header-box {
-        padding: 140px 10px 0px 20px;
-    }
-
-    .help-sign {
-        font-size: 1.5rem;
-    }
-
-    #map {
-        height: 900px;
-        width: auto;
-    }
-}

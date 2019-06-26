@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Place Autocomplete Hotel Search</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
     <meta name="description" content="Milestone Project 2 @ Code Institute" />
     <meta name="author" content="Stefan Brunotte" />
-    <title>Places New York</title>
+
 
     <!--! Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,49 +21,144 @@
 </head>
 
 <body>
-    <!--! the top of the page with background image and where the modal goes-->
-    <div class="wrapper-top">
-        <div class="image" alt="Image of New York">
-            <div class="center-align">
-                <h1 class="header-box">Places to eat at in New York</h1>
-                <a class="help-sign" href="#" data-toggle="modal" data-target="#infoModal">?</a>
-            </div>
-        </div>
-    </div>
-    <!--! here goes the map-->
-    <div id="map"></div>
-
-    <!--! modal setting-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="modal fade" id="infoModal">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h2>Click and find nearby places to eat at!</h2>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>Walk the streets of New York <br>When you want a coffe or a bite to eat
-                                                right-click on the map and find nearby suggestions!
-                                            </p>
-                                            <p>By "right-clicking" on the map you will get nearby suggestions! </p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <input class="btn btn-modal" data-dismiss="modal" value="Close">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <header>
+        <!-- Background image and landingpage-->
+        <div class="wrapper-top" id="landing-page">
+            <div class="image" alt="Image of New York">
+                <div class="header-text">
+                    <div class="header-band">
+                        <h1>Vacation Explorer</h1>
+                        <h2>- The quick way to find <i>- hotels, restaurants or bars!</i></h2>
+                        <br>
+                        <a class="button" href="#search">Start here!</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!--END Background image and landingpage-->
+    </header>
+
+    <section id="search">
+        <div id="info-text" class="information-text">
+            <h2>Vacation Explorer</h2>
+            <p class="info-text">You start your city "exploration" by choosing your country in the dropdown meny, the
+                map
+                takes you to the country. Next you type your city of interest.</p>
+            <p>When you have found your city of interest, you click on one of the three icons to find your
+                recommendations.</p> <br>
+            <p>Click on markers or the recommendations to see the location on the map and get more information.</p> <br>
+            <p><i>- You can scroll the map to change location in the city and then click on of the icons again to find
+                    the
+                    nearby recommendations -</i></p>
+        </div>
+        <!-- Dropdown meny, city search and three categories-->
+        <div id="main-buttons">
+            <div class="container">
+                <div class="justify-content-center row">
+                    <div id="controls">
+                        <select id="country" class="form-control">
+                            <option value="all">All</option>
+                            <option value="au">Australia</option>
+                            <option value="br">Brazil</option>
+                            <option value="ca">Canada</option>
+                            <option value="fr">France</option>
+                            <option value="de">Germany</option>
+                            <option value="mx">Mexico</option>
+                            <option value="nz">New Zealand</option>
+                            <option value="it">Italy</option>
+                            <option value="za">South Africa</option>
+                            <option value="es">Spain</option>
+                            <option value="pt">Portugal</option>
+                            <option value="us" selected>U.S.A.</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </div>
+                    <!--#Controls-->
+                    <div class="form-group">
+                        <input class="form-control" id="autocomplete" placeholder="Type your city..." type="text"
+                            autocomplete="off" />
+                    </div>
+                </div>
+                <!-- Search icon buttons-->
+                <div class="justify-content-center row">
+
+                    <!--Hotel button-->
+                    <button id="hotel-button" type="submit" class="btn" onclick="checkHotels">
+                        <img src="Images/bed48x48.png" alt="bed"><br>Hotels</button>
+
+                    <!--Bar button-->
+                    <button id="bar-button" type="submit" class="btn" onclick="checkBars">
+                        <img src="Images/glass48x48.png" alt="Wine Glass"><br>Bars</button>
+
+                    <!--Restaurant button-->
+                    <button id="restaurant-button" type="submit" class="btn" onclick="checkRestaurants">
+                        <img src="Images/restaurant48x48.png" alt="Knife and Fork"><br>Restaurants</button>
+                </div>
+            </div>
+            <!--End container-->
+        </div>
+        <!--END Main-buttons. Dropdown meny, city search and three categories-->
+        <div id="main">
+            <!--  container for map and listings-->
+            <div class="container">
+
+                <div class="row">
+
+                    <div id="map" class="col-sm-12 col-md-6"></div>
+
+                    <div class="col-md-6">
+
+                        <div id="text-overlay"></div>
+
+
+                        <div id="listing">
+                            <div id="results"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END row -->
+                <!--infowindow-->
+                <div style="display: none">
+                    <div id="info-content">
+                        <table>
+                            <tbody>
+                                <tr id="iw-url-row" class="iw_table_row">
+                                    <td id="iw-icon" class="iw_table_icon"></td>
+                                    <td id="iw-url"></td>
+                                </tr>
+                                <tr id="iw-address-row" class="iw_table_row">
+                                    <td class="iw_attribute_name">Address:</td>
+                                    <td id="iw-address"></td>
+                                </tr>
+                                <tr id="iw-phone-row" class="iw_table_row">
+                                    <td class="iw_attribute_name">Telephone:</td>
+                                    <td id="iw-phone"></td>
+                                </tr>
+                                <tr id="iw-rating-row" class="iw_table_row">
+                                    <td class="iw_attribute_name">Rating:</td>
+                                    <td id="iw-rating"></td>
+                                </tr>
+                                <tr id="iw-website-row" class="iw_table_row">
+                                    <td class="iw_attribute_name">Website:</td>
+                                    <td id="iw-website"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END #info-content-->
+                </div>
+                <!-- END display style for infowindow-->
+            </div>
+            <!-- END container-->
+        </div>
+        <!-- END #main-->
+        <div class="btn-top">
+            <a class="button-bottom" href="#landing-page">Back to start</a>
+        </div>
+
+    </section>
+    <!-- END #search-->
 
     <!--! Bootstrap scripts. 1) jQuery core 3.4.1 slim,-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
@@ -75,9 +170,10 @@
 
     <!--! My script file-->
     <script src="./js/script.js"></script>
+
     <!--! Google maps libraries and my API key-->
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&libraries=places&callback=initMap"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&callback=initMap&libraries=places"
         async defer></script>
 </body>
 
