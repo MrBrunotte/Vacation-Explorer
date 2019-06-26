@@ -28,12 +28,11 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <!--ml-auto navbar to the right-->
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link active" href="#landing-page">Home <span
                             class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Features</a>
                     <a class="nav-item nav-link" href="#search">Search</a>
                 </div>
             </div>
@@ -53,8 +52,7 @@
         <!--END Background image and landingpage-->
     </header>
 
-    <section>
-        <div id="search"></div>
+    <div id="search">
         <div id="info-text" class="information-text">
             <h2>Vacation Explorer</h2>
             <p>Select country and city and then click on one of the three categories</p>
@@ -63,8 +61,8 @@
         <div id="main-buttons">
             <div class="container">
                 <div class="justify-content-center row">
-                    <span class="inline-span-block">
-                        <select id="country" class="form-group">
+                    <div id="controls">
+                        <select id="country" class="form-control">
                             <option value="all">All</option>
                             <option value="au">Australia</option>
                             <option value="br">Brazil</option>
@@ -80,20 +78,24 @@
                             <option value="us" selected>U.S.A.</option>
                             <option value="uk">United Kingdom</option>
                         </select>
-                    </span>
+                    </div>
                     <!--#Controls-->
-                    <span class="inline-span-block form-group">
-                        <input id="autocomplete" placeholder="Type your city..." type="text" />
-                    </span>
+                    <div class="form-group">
+                        <input class="form-control" id="autocomplete" placeholder="Type your city..." type="text"
+                            autocomplete="off" />
+                    </div>
                 </div>
                 <!-- Search icon buttons-->
                 <div class="justify-content-center row">
+
                     <!--Hotel button-->
                     <button id="hotel-button" type="submit" class="btn" onclick="checkHotels">
-                        <img src="Images/bed48x48.png"><br>Hotels</button>
+                        <img src="Images/bed48x48.png" alt="bed"><br>Hotels</button>
+
                     <!--Bar button-->
                     <button id="bar-button" type="submit" class="btn" onclick="checkBars">
                         <img src="Images/glass48x48.png" alt="Wine Glass"><br>Bars</button>
+
                     <!--Restaurant button-->
                     <button id="restaurant-button" type="submit" class="btn" onclick="checkRestaurants">
                         <img src="Images/restaurant48x48.png" alt="Knife and Fork"><br>Restaurants</button>
@@ -101,50 +103,88 @@
             </div>
             <!--End container-->
         </div>
-        <!--END Dropdown meny, city search and three categories-->
-    </section>
-    <div class="row">
-        <div id="map" class="col-sm-12 col-md-6">
-        </div>
-        <div id="listing" class="col-md-6">
-            <div>
-                <table id="resultsTable">
-                    <tbody id="results"></tbody>
-                </table>
-            </div>
+        <!--END Main-buttons. Dropdown meny, city search and three categories-->
+        <div id="main">
+            <!--  container for map and listings-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="map" class="col-sm-12 col-md-6"></div>
 
-            <div style="display: none">
-                <div id="info-content">
-                    <table>
-                        <tr id="iw-url-row" class="iw_table_row">
-                            <td id="iw-icon" class="iw_table_icon"></td>
-                            <td id="iw-url"></td>
-                        </tr>
-                        <tr id="iw-address-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Address:</td>
-                            <td id="iw-address"></td>
-                        </tr>
-                        <tr id="iw-phone-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Telephone:</td>
-                            <td id="iw-phone"></td>
-                        </tr>
-                        <tr id="iw-rating-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Rating:</td>
-                            <td id="iw-rating"></td>
-                        </tr>
-                        <tr id="iw-website-row" class="iw_table_row">
-                            <td class="iw_attribute_name">Website:</td>
-                            <td id="iw-website"></td>
-                        </tr>
-                    </table>
+                    <div class="col-md-6">
+                        <div class="justify-content-center row">
+                            <div id="text-overlay-id">
+                                <p class="break font-weight-bold mt-3 ml-md-5">
+                                    <ol>
+                                        <li>Choose your country</li>
+                                        <li>Choose your city</li>
+                                        <li>Click on the icons for recommendations</li>
+                                    </ol>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="listing">
+                            <div id="results">
+                                <div class="card">
+                                    <div class="row">
+                                        <div class="col-2 d-flex">
+                                            <img class="placeIcon" src="/Images/marker.png" alt="Marker">
+                                        </div>
+                                        <div class="listing col-7">
+                                            <p class="font-weight-bold"></p>
+                                            <p></p>
+                                        </div>
+                                        <div class="rating col-3 d-flex">
+                                            <p class="align-self-center">
+                                                <span>
+                                                    <img class="star" src="/Images/trophy48x48.png" alt="Star">
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- END row -->
+                <!--infowindow-->
+                <div style="display: none">
+                    <div id="info-content">
+                        <table>
+                            <tbody>
+                                <tr id="iw-url-row" class="iw_table_row">
+                                    <td id="iw-icon" class="iw_table_icon"></td>
+                                    <td id="iw-url"></td>
+                                </tr>
+                                <tr id="iw-address-row" class="iw_table_row">
+                                    <td class="iw_attribute_name">Address:</td>
+                                    <td id="iw-address"></td>
+                                </tr>
+                                <tr id="iw-phone-row" class="iw_table_row">
+                                    <td class="iw_attribute_name">Telephone:</td>
+                                    <td id="iw-phone"></td>
+                                </tr>
+                                <tr id="iw-rating-row" class="iw_table_row">
+                                    <td class="iw_attribute_name">Rating:</td>
+                                    <td id="iw-rating"></td>
+                                </tr>
+                                <tr id="iw-website-row" class="iw_table_row">
+                                    <td class="iw_attribute_name">Website:</td>
+                                    <td id="iw-website"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END #info-content-->
+                </div>
+                <!-- END display style for infowindow-->
             </div>
+            <!-- END container-->
         </div>
+        <!-- END #main-->
     </div>
-    <section>
-
-    </section>
-
+    <!-- END #search-->
 
 
     <!--
@@ -184,9 +224,10 @@
 
     <!--! My script file-->
     <script src="./js/hotelSearch.js"></script>
+
     <!--! Google maps libraries and my API key-->
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&libraries=places&callback=initMap"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKcp5VZq8sZ-g6liblriDyqOXl_-7fpo&callback=initMap&libraries=places"
         async defer></script>
 </body>
 
