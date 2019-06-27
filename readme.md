@@ -1,4 +1,4 @@
-# Places to eat at in New York
+# Vacation Explorer
 
 Vacation explorer makes recommendations to the user based on the chosen city. It can be used to find hotels, restaurants and what to do in a particular city.
 This is a webpage that is simple and intuiative for the user to use, the intention is to have a clean and simple layout so that the user will not be confused and not know what to do when visiting the page.
@@ -23,21 +23,21 @@ The wireframe displays my sites structure both on a smartphone and on a desktop,
 
 The wireframe and mockup was made with [AdobeXd](https://www.adobe.com/#).
 
-[VacationExplorer-Mockup/Wireframe](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Mockup_wireframe/Mockup_Wireframe.pdf)
+[VacationExplorer-Mockup/Wireframe]()
 
 #### Wireframes - Smartphone and Desktop
 
 Here are my individual wireframes:
 
-1) [Smartphone](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Mockup_wireframe/Wireframe%20iPhone%20X.pdf)
-2) [Desktop](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Mockup_wireframe/Wireframe%20%20Desktop%201920x1080.pdf)
+1) [Smartphone]()
+2) [Desktop]()
 
 #### Mockups - Smartphone and Desktop
 
 Here are my individual mockups:
 
-1) [Smartphone](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Mockup_wireframe/Mockup%20iPhone%20X.pdf)
-2) [Desktop](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Mockup_wireframe/Mockup%20Desktop%201920x1080.pdf)
+1) [Smartphone]()
+2) [Desktop]()
 
 ### Features
 
