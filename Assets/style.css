@@ -10,8 +10,8 @@
     h1 {
         font-weight: bold;
         text-transform: uppercase;
-        padding-top: 70px;
-        font-size: 4.5rem;
+        padding-top: 10px;
+        font-size: 48px;
     }
 
     h1, h2, h3, h4, h5, h6, a {
@@ -31,7 +31,6 @@
 
     p {
         font-size: 15px;
-        letter-spacing: 1px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -45,7 +44,13 @@
 
     #map,
     #listing {
-        height: 450px;
+        height: 385px;
+    }
+
+    #listing {
+        width: 90%;
+        margin-top: 15px;
+        margin-left:20px;
     }
 
     #map {
@@ -66,7 +71,8 @@
         margin-top: 1em;
         cursor: pointer;
         overflow-x: auto;
-        width: 571px;
+        /*width: 571px;*/
+        width: 475px;
     }
 
     #controls {
@@ -78,7 +84,7 @@
         color: #444;
         background-color: #f2f2f2;
         min-width: 260px;
-        height: 40px;
+        height: 30px;
         border-radius: 5px;
     }
 
@@ -89,7 +95,7 @@
     }
 
     #results {
-        width: 540px;
+        width: 440px;
     }
     
     #rating {
@@ -97,8 +103,7 @@
         font-family: Arial Unicode MS;
     }
 
-
-    /* --------------------------- CLASSES --------------------*/
+/* --------------------------- CLASSES --------------------*/
     .info-text{
         font-size: 1rem;
     }
@@ -160,8 +165,13 @@
         padding: 270px 0px;
     }
 
+    
+    .header-p {
+        font-size: 24px;
+    }
+
     .header-band {
-        height: 350px;
+        height: 180px;
         background-color: rgba(0, 0, 0, 0.4);
     }
 
@@ -193,8 +203,8 @@
     display: block;
     width: 100%;
     height: calc(1.5em + .75rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
+    padding: 0px 10px 0px 10px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
@@ -215,7 +225,7 @@
 
     .button {
         color: white;
-        font-size: 40px;
+        font-size: 20px;
         background-color: hsla(0, 0%, 44%, 0.1);
         min-width: 260px;
         height: 40px;
@@ -272,3 +282,191 @@
     .iw-phone {
         font-family: 'Oswald', sans-serif;
     }
+
+/* --------------------------- MEDIA QUERIES --------------------*/
+
+/* Extra small devices (below 330px) */
+/*
+@media only screen and (max-width: 330px) {
+
+h1,
+h2 {
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 12px;
+}
+
+#search {
+    height: 1620px;
+}
+
+#country,
+#autocomplete {
+    min-width: 185px;
+}
+
+#listing {
+    width: 90%;
+    margin-top: 15px;
+    margin-left:20px;
+}
+
+#hotel-button, 
+#restaurant-button, 
+#bar-button {
+    width: 100px;
+}
+
+#map {
+    width: 83%;
+    margin: 10px 20px 10px 34px;
+}
+
+.header-band{
+    height: 145px;
+}
+
+.button {
+    font-size: 20px;
+}
+
+.info-text {
+    font-size: 14px;
+    margin: 0px 25px 0px 25px;
+}
+
+.form-control {
+    font-size: 14px;
+}
+
+
+} 
+
+/* Between 331px and 413px */
+/*
+@media screen (max-width:413px) and (min-width:331px) {
+
+    h1,
+    h2 {
+        font-size: 32px;
+        padding-top: 10px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+    
+    #search {
+        height: 1569px;
+    }
+    
+    #country,
+    #autocomplete {
+        min-width: 185px;
+    }
+    
+    #listing {
+        width: 90%;
+        margin-top: 15px;
+        margin-left:20px;
+    }
+    
+    #hotel-button, 
+    #restaurant-button, 
+    #bar-button {
+        width: 100px;
+    }
+    
+    #map {
+        width: 83%;
+        margin: 10px 20px 10px 34px;
+    }
+    
+    .header-band{
+        height: 145px;
+    }
+    
+    .button {
+        font-size: 20px;
+    }
+    
+    .info-text {
+        font-size: 14px;
+        margin: 0px 25px 0px 25px;
+    }
+    
+    .form-control {
+        font-size: 14px;
+    }
+    
+    .col-7 {
+        width: 200px !important;
+    }
+    
+    }*/
+
+    /* Between 414px and 599px */
+    /*
+@media screen (max-width:599px) and (min-width:414px) {
+
+    h1,
+    h2 {
+        font-size: 32px;
+        padding-top: 10px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+    
+    #search {
+        height: 1569px;
+    }
+    
+    #country,
+    #autocomplete {
+        min-width: 185px;
+    }
+    
+    #listing {
+        width: 90%;
+        margin-top: 15px;
+        margin-left:20px;
+    }
+    
+    #hotel-button, 
+    #restaurant-button, 
+    #bar-button {
+        width: 100px;
+    }
+    
+    #map {
+        width: 83%;
+        margin: 10px 20px 10px 34px;
+    }
+    
+    .header-band{
+        height: 145px;
+    }
+    
+    .button {
+        font-size: 20px;
+    }
+    
+    .info-text {
+        font-size: 14px;
+        margin: 0px 25px 0px 25px;
+    }
+    
+    .form-control {
+        font-size: 14px;
+    }
+    
+    .col-7 {
+        width: 200px !important;
+    }
+    
+    } */

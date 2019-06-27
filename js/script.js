@@ -233,7 +233,7 @@ function addResult(result, i) {
 
     //Creating div for the name and address of the venue.
     var listingDiv = document.createElement('div');
-    listingDiv.setAttribute('class', 'listing col-7');
+    listingDiv.setAttribute('class', 'listing col-6');
     var nameDiv = document.createElement('p');
     nameDiv.setAttribute('class', 'font-weight-bold');
     var addressDiv = document.createElement('p');
