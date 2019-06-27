@@ -11,7 +11,7 @@
         font-weight: bold;
         text-transform: uppercase;
         padding-top: 10px;
-        font-size: 48px;
+        font-size: 75px;
     }
 
     h1, h2, h3, h4, h5, h6, a {
@@ -162,7 +162,7 @@
     .header-text {
         color: white;
         text-align: center;
-        padding: 270px 0px;
+        padding: 350px 0px;
     }
 
     
@@ -171,7 +171,7 @@
     }
 
     .header-band {
-        height: 180px;
+        height: 210px;
         background-color: rgba(0, 0, 0, 0.4);
     }
 

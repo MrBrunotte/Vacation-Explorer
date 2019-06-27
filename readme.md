@@ -105,6 +105,28 @@ I used the jQuery library for the modal
 
 ### Testing
 
+####Test Matrix
+
+I created a testing matrix in Excel. It outlines the various tests I made to ensure that the site renders consistently across different plattforms. I have saved an image of my Excel file here: 
+
+- [HTML Validation](https://validator.w3.org/):
+- [CSS Validation](https://jigsaw.w3.org/css-validator/): 
+- [JavaScript Validation](http://beautifytools.com/javascript-validator.php):
+- [JSHint (v2.9.6)](https://jshint.com/)
+    - There are **18** functions in this file.
+    - Function with the largest signature take **2** arguments, while the median is **0**.
+    - Largest function has **52** statements in it, while the median is **4.5**.
+    - The most complex function has a cyclomatic complexity value of **7** while the median is **1**.
+    - Two warnings:
+        - ['us'] is better written in dot notation.
+    - One undefined variables:
+        - google - Used for google.Maps.
+    - Four unused variables:
+        - initMap
+        - hotel
+        - bar
+        - restaurant
+
 ### Deployment
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
