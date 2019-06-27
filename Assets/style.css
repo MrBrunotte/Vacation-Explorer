@@ -38,7 +38,7 @@
 /* -----------------------------# ID's------------------------------- */
 
     #search {
-        height: 966px;
+        height: 810px;
         background-color: rgba(128, 128, 128, 0.315);
     }
 
@@ -105,7 +105,7 @@
 
 /* --------------------------- CLASSES --------------------*/
     .info-text{
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     .image {
@@ -286,7 +286,7 @@
 /* --------------------------- MEDIA QUERIES --------------------*/
 
 /* Extra small devices (below 330px) */
-/*
+
 @media only screen and (max-width: 330px) {
 
 h1,
@@ -322,7 +322,6 @@ p {
 
 #map {
     width: 83%;
-    margin: 10px 20px 10px 34px;
 }
 
 .header-band{
@@ -346,8 +345,8 @@ p {
 } 
 
 /* Between 331px and 413px */
-/*
-@media screen (max-width:413px) and (min-width:331px) {
+
+@media screen and (max-width:413px) and (min-width:331px) {
 
     h1,
     h2 {
@@ -382,7 +381,6 @@ p {
     
     #map {
         width: 83%;
-        margin: 10px 20px 10px 34px;
     }
     
     .header-band{
@@ -406,11 +404,10 @@ p {
         width: 200px !important;
     }
     
-    }*/
+    }
 
     /* Between 414px and 599px */
-    /*
-@media screen (max-width:599px) and (min-width:414px) {
+@media screen and (max-width:600px) and (min-width:414px) {
 
     h1,
     h2 {
@@ -421,9 +418,9 @@ p {
     p {
         font-size: 12px;
     }
-    
+
     #search {
-        height: 1569px;
+        height: 1267px;
     }
     
     #country,
@@ -445,11 +442,14 @@ p {
     
     #map {
         width: 83%;
-        margin: 10px 20px 10px 34px;
     }
     
     .header-band{
-        height: 145px;
+        height: 155px;
+    }
+
+    .header-p {
+        font-size: 18px;
     }
     
     .button {
@@ -469,4 +469,16 @@ p {
         width: 200px !important;
     }
     
-    } */
+    }
+
+    /* Between 600px and 768px */
+@media screen and (max-width:768px) and (min-width:600px) {
+
+    #search {
+        height: 1364px;
+    }
+
+    .header-band {
+        height: 175px;
+    }
+}
