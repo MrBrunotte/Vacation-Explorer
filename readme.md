@@ -40,7 +40,7 @@ Here are my individual mockups:
 1) [Smartphone](Wireframe_Mockup/iPhone_Mockup.png)
 2) [Desktop](Wireframe_Mockup/DESKTOP_Mockup.png)
 
-### Features
+## Features
 
 There are four features (at the most) that the user needs to interact with before getting a result:
 
@@ -53,17 +53,17 @@ The user will get a result after these steps. The usear may also move along on t
 
 The webpage is built to be simple and easy for the user to use!
 
-#### Existing Features
+### Existing Features
 
 #### Landingpage
 
 The landingpage is simple and clean with only one interaction button for the user to click to get started. The image is of a road and fits with the theme of the page which is travel and finding places. The road illustrates that the user is going somewhere and wants to find something before getting there.
 
-#### Coountry selector
+#### Country selector
 
 The country selector lets the user choose different countries or all countries, the result will be the same when the user goes through the next step which is typing the city of interest.
 
-#### City
+#### City selector
 
 When the user starts typing the city of interest the autocomplete function gives suggestions of cities that fit the spelling the user types. The user is then taken to the center of the chosen site and a city map appears.
 
@@ -85,12 +85,12 @@ The user may also use the map to navigate around in the city by clicking and dra
 
 When the user is at the bottom of the page, the user can click the "Back to top" link to easily get back to the landingpage.
 
-### Technologies Used
+## Technologies Used
 
 This site is build with the help of different languages, frameworks and libraries.
 Below is a list of what I have used to build this site:
 
-#### Google Maps Platform
+### Google Maps Platform
 
 I have used the Maps JavaScript API platform. This API lets me customize my map with own content and imagery.
 
@@ -100,39 +100,45 @@ I have also used the Places API. This API is a service that returns information 
 
 [Places API](https://developers.google.com/places/web-service/intro)
 
-#### Bootstrap
+### Bootstrap
 
 I used the Bootstrap framework to build a responsinve site
 
 [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/)
 
-#### Google fonts
+### CSS3
+
+I used CSS3 media queries to make sure the site works on smartphones.
+
+[CSS3](http://www.css3.info/)
+
+### Google fonts
 
 The fonts that I used came from Google fonts and the fontfamily used is called: Baloo Bhai
 
 [GoogleFonts](https://fonts.google.com/)
 
-#### Flaticon
+### Flaticon
 
 I used the icons for the checkboxes form the Flaticon website.
 
 [Flaticon](https://www.flaticon.com/)
 
-#### jQuery library
+### jQuery library
 
 I used the jQuery library for the modal
 
 [jQuery](https://code.jquery.com/)
 
-#### d3
+### d3 library
 
 A javascript visualization library for HTML and SVG
 
 [d3](https://cdnjs.com/libraries/d3)
 
-### Testing
+## Testing
 
-####Test Matrix
+### Test Matrix
 
 I created a testing matrix in Excel. It outlines the various tests I made to ensure that the site renders consistently across different plattforms. Jasmine testing was not essential for this project.
 
@@ -159,7 +165,7 @@ I created a testing matrix in Excel. It outlines the various tests I made to ens
 
 - [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/): Chrome DevTools was used for testing HTML, CSS and responsiveness of the site.
 
-#### Compatibility
+### Compatibility
 
 I tested the site across the 5 major browsers (see the test matrix above) to ensure the a broad range of user can successfully use the site.
 
@@ -169,7 +175,7 @@ I tested the site across the 5 major browsers (see the test matrix above) to ens
 - Edge
 - Internet Explorer (IE)
 
-### Deployment
+## Deployment
 
 Deployment and source control was done via GitHub.
 My repository can be found [here](https://github.com/MrBrunotte/Vacation-Explorer)
@@ -179,10 +185,18 @@ The live site can be found [here](https://mrbrunotte.github.io/Vacation-Explorer
 
 There are no differenced between the deployed version and the development version.
 
-#### Content
+## Content
 
 All data in this project is used from the [Google maps Platform](https://cloud.google.com/maps-platform/?&sign=0).
 
-#### Media
+## Media
 
-#### Acknowledgements
+The images used for the landing page and the listing section are both royalty free and they were found through a simple Google search.
+
+The icons are made by Freepik from [Flaticon](https://www.flaticon.com/)
+
+## Acknowledgements
+
+I would like to thank my mentor [Maranatha A. Ilesanmi](https://github.com/mbilesanmi) for his time and constructive feedback for this project!
+
+I would also like to thank the Code Institute tutors and slack community for their help and feedback throughout the process of building this project.
