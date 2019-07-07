@@ -22,11 +22,9 @@ I used the Roboto Condensed fonts for the headings (h1 and h2) and it is pared w
 
 The wireframe displays my sites structure both on a smartphone and on a desktop, the mockup shows the static visual design draft. In the mockup you can see the colors and typography etc of the page.
 
-The wireframe and mockup was made with [AdobeXd](https://www.adobe.com/#).
+The wireframe and mockup was made with [AdobeXd](https://www.adobe.com/se/products/xd.html).
 
-[VacationExplorer-Mockup/Wireframe]()
-
-#### Wireframes - Smartphone and Desktop
+#### My wireframes - Smartphone and Desktop
 
 Here are my individual wireframes:
 
@@ -42,43 +40,63 @@ Here are my individual mockups:
 
 ### Features
 
-There are mainly two features that the user needs to interact with before getting a result:
+There are four features (at the most) that the user needs to interact with before getting a result:
 
-1) Choosing the category of interest, and
-2) typing the city of interest!
+1) Clicking on the 'Start' button or scrolling down the page.
+2) Selecting the country of interest.
+3) typing the city of interest.
+4) Clicking on the icon of interest.
+
+The user will get a result after these steps. The usear may also move along on the map to a different location in the city and when the user have found the new location, he/she clicks on one of the icons again to get recommendations for this location. The user can also re-click on the other icons to get the recommendatios of the chosen location.
 
 The webpage is built to be simple and easy for the user to use!
 
 #### Existing Features
 
-#### ? anchor
+#### Landingpage
 
-The ? is a modal that when clicked informs the user how to use the website.
+The landingpage is simple and clean with only one interaction button for the user to click to get started. The image is of a road and fits with the theme of the page which is travel and finding places. The road illustrates that the user is going somewhere and wants to find something before getting there.
 
-#### Checkboxes
+#### Coountry selector
 
-The user checks one, two or three boxes according to what recommendations the user wants. When a box is checked the recommendations will be displayed below the search field.
+The country selector lets the user choose different countries or all countries, the result will be the same when the user goes through the next step which is typing the city of interest.
 
-#### Search field
+#### City
 
-The user types the city where they want to travel to.
+When the user starts typing the city of interest the autocomplete function gives suggestions of cities that fit the spelling the user types. The user is then taken to the center of the chosen site and a city map appears.
 
 #### Recommendations
 
 There are three catagories of recommendations:
 
-1) Where to stay?
-2) Where to eat?
-3) What to do?
+1) Hotels
+2) Bars
+3) restaurants
 
-#### Back to top link
+The user clicks on one of the three catagories and markers drop down and displays the location of the chosen icon. The results is also displayed to the right of the map on a desktop and below the map on a smartphone. The user may click on the markers on the map or in the list of recommendations to get a pop-up info box on the map. When the user clicks on another marker or suggestion in the list the previous pop-up box closes and the new one appears.
 
-When the user is at the bottom of the page, the user can click the "Back to top" link to easily get back to the start.
+#### Map
+
+The user may also use the map to navigate around in the city by clicking and dragging. The map moves and when the user has found the new location in the city the process can start over with new recommendations in this area.
+
+#### Back to top button
+
+When the user is at the bottom of the page, the user can click the "Back to top" link to easily get back to the landingpage.
 
 ### Technologies Used
 
 This site is build with the help of different languages, frameworks and libraries.
 Below is a list of what I have used to build this site:
+
+#### Google Maps Platform
+
+I have used the Maps JavaScript API platform. This API lets me customize my map with own content and imagery.
+
+[Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial)
+
+I have also used the Places API. This API is a service that returns information about places using HTTP requests.
+
+[Places API](https://developers.google.com/places/web-service/intro)
 
 #### Bootstrap
 
@@ -92,11 +110,11 @@ The fonts that I used came from Google fonts and the fontfamily used is called: 
 
 [GoogleFonts](https://fonts.google.com/)
 
-#### Font Awsome
+#### Flaticon
 
-I used the icons for the checkboxes form the Font Awsome website
+I used the icons for the checkboxes form the Flaticon website.
 
-[Fontawsome](https://fontawesome.com/start)
+[Flaticon](https://www.flaticon.com/)
 
 #### jQuery library
 
@@ -104,11 +122,19 @@ I used the jQuery library for the modal
 
 [jQuery](https://code.jquery.com/)
 
+#### d3
+
+A javascript visualization library for HTML and SVG
+
+[d3](https://cdnjs.com/libraries/d3)
+
 ### Testing
 
 ####Test Matrix
 
-I created a testing matrix in Excel. It outlines the various tests I made to ensure that the site renders consistently across different plattforms. I have saved an image of my Excel file here: 
+I created a testing matrix in Excel. It outlines the various tests I made to ensure that the site renders consistently across different plattforms. 
+
+I have saved an image of my Excel file here: ![Test Matrix](Images/Test_matrix.PNG)
 
 - [HTML Validation](https://validator.w3.org/): No errors or warnings to show.
 - [CSS Validation](https://jigsaw.w3.org/css-validator/): No errors found. CSS validation level: CSS level 3 + SVG
