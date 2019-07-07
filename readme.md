@@ -30,15 +30,15 @@ The wireframe and mockup was made with [AdobeXd](https://www.adobe.com/#).
 
 Here are my individual wireframes:
 
-1) [Smartphone]()
-2) [Desktop]()
+1) [Smartphone](Wireframe_Mockup/iPhone_Wireframe.png)
+2) [Desktop](Wireframe_Mockup/DESKTOP_Wireframe.png)
 
 #### Mockups - Smartphone and Desktop
 
 Here are my individual mockups:
 
-1) [Smartphone]()
-2) [Desktop]()
+1) [Smartphone](Wireframe_Mockup/iPhone_Mockup.png)
+2) [Desktop](Wireframe_Mockup/DESKTOP_Mockup.png)
 
 ### Features
 
