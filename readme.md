@@ -1,18 +1,19 @@
 # Vacation Explorer
 
-Vacation explorer makes recommendations to the user based on the chosen city. It can be used to find hotels, restaurants and what to do in a particular city.
-This is a webpage that is simple and intuiative for the user to use, the intention is to have a clean and simple layout so that the user will not be confused and not know what to do when visiting the page.
+Vacation explorer makes recommendations to the user based on the chosen city. It can be used to find hotels, restaurants and bars in the chosen city. The user can also scroll on the map to find other locations in the city, this is done by scrolling to the new location and then clicking on one of the three buttons to get the disired recommendations.
+
+The webpage is simple and intuiative for the user to use, the intention is to have a clean and simple layout so that the user will not be confused and not know what to do when visiting the page.
 
 ## UX
 
-This website is for anyone who thinks of traveling to another city and want some ideas of where to stay, eat and do! The website gives the user a quick and easy access to these three catagories in the chosen city. The webpage has a simple layout so that the user quickly can get an overview if the city has anything to offer them.
+This website is for anyone who thinks of traveling to another city and want some ideas to find hotels, restaurants and bars in the city! The website gives the user a quick and easy access to these three catagories in the chosen city. The webpage has a simple layout so that the user quickly can get an overview if the city has anything to offer them.
 
-The typical user is person or family that haven't decided on where they want to go for a vacation. They want a simple first look at the destination.
+The typical user is person or family that haven't decided on where they want to go for a vacation. They want a simple first look at their destination.
 
 ### Fonts
 
 I have used two different fonts from Google fonts to create a typographic harmony.
-I used the Roboto Condensed fonts for the headings and it is pared with the Oswald fonts for the body text.
+I used the Roboto Condensed fonts for the headings (h1 and h2) and it is pared with the Oswald fonts for the body text.
 
 1) Roboto Condensed [RobotoCondensed](https://fonts.google.com/?selection.family=Oswald|Roboto+Condensed&query=roboto+condensed)
 2) Oswald [Oswald](https://fonts.google.com/?selection.family=Oswald|Roboto+Condensed&query=oswald)
@@ -109,10 +110,11 @@ I used the jQuery library for the modal
 
 I created a testing matrix in Excel. It outlines the various tests I made to ensure that the site renders consistently across different plattforms. I have saved an image of my Excel file here: 
 
-- [HTML Validation](https://validator.w3.org/):
-- [CSS Validation](https://jigsaw.w3.org/css-validator/): 
-- [JavaScript Validation](http://beautifytools.com/javascript-validator.php):
-- [JSHint (v2.9.6)](https://jshint.com/)
+- [HTML Validation](https://validator.w3.org/): No errors or warnings to show.
+- [CSS Validation](https://jigsaw.w3.org/css-validator/): No errors found. CSS validation level: CSS level 3 + SVG
+- [JavaScript Validation](http://beautifytools.com/javascript-validator.php): For errors see JSHint below!
+
+- [JSHint (v2.10.2)](https://jshint.com/)
     - There are **18** functions in this file.
     - Function with the largest signature take **2** arguments, while the median is **0**.
     - Largest function has **52** statements in it, while the median is **4.5**.
@@ -120,24 +122,34 @@ I created a testing matrix in Excel. It outlines the various tests I made to ens
     - Two warnings:
         - ['us'] is better written in dot notation.
     - One undefined variables:
-        - google - Used for google.Maps.
+        - google - external variable from Google Maps
     - Four unused variables:
-        - initMap
-        - hotel
-        - bar
-        - restaurant
+        - initMap - external variable from Google Maps
+        - hotel - variable used for the listener for the search icon buttons
+        - bar - variable used for the listener for the search icon buttons
+        - restaurant - variable used for the listener for the search icon buttons
+
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/): Chrome DevTools was used for testing HTML, CSS and responsiveness of the site.
+
+#### Compatibility
+
+I tested the site across the 5 major browsers (see the test matrix above) to ensure the a broad range of user can successfully use the site.
+
+- Chrome
+- Firefox
+- Opera
+- Edge
+- Internet Explorer (IE)
 
 ### Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+Deployment and source control was done via GitHub.
+My repository can be found [here](https://github.com/MrBrunotte/Vacation-Explorer)
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+I have puplished the source code built from the master branch using GitHub Pages.
+The live site can be found [here](https://mrbrunotte.github.io/Vacation-Explorer/)
 
-    Different values for environment variables (Heroku Config Vars)?
-    Different configuration files?
-    Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+There are no differenced between the deployed version and the development version.
 
 ### Credits
 
