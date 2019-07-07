@@ -1,5 +1,7 @@
 # Vacation Explorer
 
+![Landingpage](Images/Landingpage.PNG)
+
 Vacation explorer makes recommendations to the user based on the chosen city. It can be used to find hotels, restaurants and bars in the chosen city. The user can also scroll on the map to find other locations in the city, this is done by scrolling to the new location and then clicking on one of the three buttons to get the disired recommendations.
 
 The webpage is simple and intuiative for the user to use, the intention is to have a clean and simple layout so that the user will not be confused and not know what to do when visiting the page.
@@ -132,9 +134,9 @@ A javascript visualization library for HTML and SVG
 
 ####Test Matrix
 
-I created a testing matrix in Excel. It outlines the various tests I made to ensure that the site renders consistently across different plattforms. 
+I created a testing matrix in Excel. It outlines the various tests I made to ensure that the site renders consistently across different plattforms. Jasmine testing was not essential for this project.
 
-I have saved an image of my Excel file here: ![Test Matrix](Images/Test_matrix.PNG)
+![Test Matrix](Images/Test_matrix.PNG)
 
 - [HTML Validation](https://validator.w3.org/): No errors or warnings to show.
 - [CSS Validation](https://jigsaw.w3.org/css-validator/): No errors found. CSS validation level: CSS level 3 + SVG
@@ -177,9 +179,9 @@ The live site can be found [here](https://mrbrunotte.github.io/Vacation-Explorer
 
 There are no differenced between the deployed version and the development version.
 
-### Credits
-
 #### Content
+
+All data in this project is used from the [Google maps Platform](https://cloud.google.com/maps-platform/?&sign=0).
 
 #### Media
 
