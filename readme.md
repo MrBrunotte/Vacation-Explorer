@@ -187,6 +187,24 @@ I tested the site across the **5 major browsers** (see the test matrix above) to
 Deployment *and* source control was done via **GitHub**.
 My repository can be found [here](https://github.com/MrBrunotte/Vacation-Explorer)
 
+I deployed my page this way:
+
+1) On GitHub I navigated to [Vacation Explorer](https://github.com/MrBrunotte/Vacation-Explorer)
+2) From the top menu I clicked on *settings*
+3) I then scrolled down to the *GitHub pages*
+4) Under the *source* section I clicked on the dropdown menu and selected *Master branch* as my GitHub publishing source.
+5) I then saved the settings.
+
+To create a local repository from my work follow these steps:
+
+1) Go to [Vacation Explorer](https://github.com/MrBrunotte/Vacation-Explorer)
+2) In the Vacation Explorer repository, click the green *Clone or Download* button.
+3) In the *Clone with HTTPs section* clone URL for the repository.
+4) Open Git Bash in your local platform.
+5) Change the current working directory to the location where you want the cloned directory to be made.
+6) Type git clone, and then paste the URL that was copied in step 5: [My git clone](https://github.com/MrBrunotte/Vacation-Explorer.git)
+7) After pressing **ENTER** your local clone of my project is created.
+
 I have puplished the source code built from the master branch using **GitHub Pages**.
 The live site can be found [here](https://mrbrunotte.github.io/Vacation-Explorer/)
 
