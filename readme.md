@@ -17,8 +17,8 @@ The typical user is person or family that haven't decided on where they want to 
 I have used two different fonts from Google fonts to create typographic harmony.
 I used the Roboto Condensed fonts for the headings (h1 and h2) and it is pared with the Oswald fonts for the body text.
 
-1) Roboto Condensed [RobotoCondensed](https://fonts.google.com/specimen/Roboto+Condensed)
-2) Oswald [Oswald](https://fonts.google.com/specimen/Oswald)
+1) **Roboto Condensed** [RobotoCondensed](https://fonts.google.com/specimen/Roboto+Condensed)
+2) **Oswald** [Oswald](https://fonts.google.com/specimen/Oswald)
 
 ### Wireframe and Mockup
 
@@ -28,14 +28,14 @@ The wireframe and mockup was made with [AdobeXd](https://www.adobe.com/se/produc
 
 #### My wireframes - Smartphone and Desktop
 
-Here are my individual wireframes:
+Here are my individual *wireframes*:
 
 1) [Smartphone](Wireframe_Mockup/iPhone_Wireframe.png)
 2) [Desktop](Wireframe_Mockup/DESKTOP_Wireframe.png)
 
 #### Mockups - Smartphone and Desktop
 
-Here are my individual mockups:
+Here are my individual *mockups*:
 
 1) [Smartphone](Wireframe_Mockup/iPhone_Mockup.png)
 2) [Desktop](Wireframe_Mockup/DESKTOP_Mockup.png)
@@ -51,7 +51,7 @@ There are four features (at the most) that the user needs to interact with befor
 
 The user will get a result after these steps. The user may also move along on the map to a different location in the city and when the user have found the new location, he/she clicks on one of the icons again to get recommendations for this area. The user can also re-click on the other icons to get the recommendatios of the chosen area.
 
-The webpage is built to be simple and easy for the user to use!
+**The webpage is built to be simple and easy for the user to use!**
 
 ### Existing Features
 
@@ -69,7 +69,7 @@ When the user starts typing the city of interest the autocomplete function gives
 
 #### Recommendations
 
-There are three catagories of recommendations:
+There are *three catagories* of recommendations:
 
 1) Hotels
 2) Bars
@@ -167,7 +167,7 @@ I created a testing matrix in Excel. It outlines the various tests I made to ens
 
 ### Compatibility
 
-I tested the site across the 5 major browsers (see the test matrix above) to ensure the a broad range of user can successfully use the site.
+I tested the site across the **5 major browsers** (see the test matrix above) to ensure the a broad range of user can successfully use the site.
 
 - Chrome
 - Firefox
@@ -183,7 +183,7 @@ My repository can be found [here](https://github.com/MrBrunotte/Vacation-Explore
 I have puplished the source code built from the master branch using GitHub Pages.
 The live site can be found [here](https://mrbrunotte.github.io/Vacation-Explorer/)
 
-There are no differenced between the deployed version and the development version.
+There is no difference between the deployed version and the development version.
 
 ## Content
 
@@ -193,10 +193,10 @@ All data in this project is used from the [Google maps Platform](https://cloud.g
 
 The images used for the landing page and the listing section are both royalty free and they were found through a simple Google search.
 
-The icons are made by Freepik from [Flaticon](https://www.flaticon.com/)
+**The icons are made by Freepik from [Flaticon](https://www.flaticon.com/)**
 
 ## Acknowledgements
 
-I would like to thank my mentor [Maranatha A. Ilesanmi](https://github.com/mbilesanmi) for his time and constructive feedback for this project!
+I would like to thank my mentor **[Maranatha A. Ilesanmi](https://github.com/mbilesanmi)** for his time and constructive feedback for this project!
 
-I would also like to thank the Code Institute tutors and slack community for their help and feedback throughout the process of building this project.
+I would also like to thank the **Code Institute tutors** and **Slack community** for their help and feedback throughout the process of building this project.
