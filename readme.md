@@ -8,7 +8,8 @@ With this website you can, in an easy way, find recommendations of hotels, bars 
 
 ## UX
 
-This website is for anyone who thinks of traveling to another city and want some ideas to find hotels, restaurants and bars in the city! The website gives the user a quick and easy access to these three catagories in the chosen city. The webpage has a simple layout so that the user quickly can get an overview if the city has anything to offer them.
+This website is for anyone who thinks of traveling to another city and want some ideas to find hotels, restaurants and bars in the city!
+The website gives the user a quick and easy access to these three catagories in the chosen city. The webpage has a simple layout so that the user quickly can get an overview if the city has anything to offer them.
 
 The typical user is person or family that haven't decided on where they want to go for a vacation. They want a simple first look at their destination, or they want to have a guide with them when they are on the vacation.
 
@@ -17,8 +18,8 @@ The typical user is person or family that haven't decided on where they want to 
 I have used two different fonts from Google fonts to create typographic harmony.
 I used the Roboto Condensed fonts for the headings (h1 and h2) and it is pared with the Oswald fonts for the body text.
 
-1) **Roboto Condensed** [RobotoCondensed](https://fonts.google.com/specimen/Roboto+Condensed)
-2) **Oswald** [Oswald](https://fonts.google.com/specimen/Oswald)
+1) **[RobotoCondensed](https://fonts.google.com/specimen/Roboto+Condensed)**
+2) **[Oswald](https://fonts.google.com/specimen/Oswald)**
 
 ### Wireframe and Mockup
 
@@ -26,19 +27,17 @@ The wireframe displays my sites structure both on a smartphone and on a desktop,
 
 The wireframe and mockup was made with [AdobeXd](https://www.adobe.com/se/products/xd.html).
 
+Below you can see the **wireframes** and **mockups** for my site.
+
 #### My wireframes - Smartphone and Desktop
 
-Here are my individual *wireframes*:
-
-1) [Smartphone](Wireframe_Mockup/iPhone_Wireframe.png)
-2) [Desktop](Wireframe_Mockup/DESKTOP_Wireframe.png)
+1) [Smartphone wireframe](Wireframe_Mockup/iPhone_Wireframe.png)
+2) [Desktop wireframe](Wireframe_Mockup/DESKTOP_Wireframe.png)
 
 #### Mockups - Smartphone and Desktop
 
-Here are my individual *mockups*:
-
-1) [Smartphone](Wireframe_Mockup/iPhone_Mockup.png)
-2) [Desktop](Wireframe_Mockup/DESKTOP_Mockup.png)
+1) [Smartphone mockup](Wireframe_Mockup/iPhone_Mockup.png)
+2) [Desktop mockup](Wireframe_Mockup/DESKTOP_Mockup.png)
 
 ## Features
 
