@@ -41,12 +41,12 @@ Below you can see the **wireframes** and **mockups** for my site.
 
 ## Features
 
-There are four features (at the most) that the user needs to interact with before getting a result:
+There are *four* features (at the most) that the user needs to interact with before getting a result:
 
-1) Clicking on the 'Start' button (or scrolling down the page).
-2) Selecting the country of interest.
-3) typing the city of interest.
-4) Clicking on the icon of interest.
+**1) Clicking on the 'Start' button (or scrolling down the page).**
+**2) Selecting the country of interest.**
+**3) Typing the city of interest.**
+**4) Clicking on the icon of interest.**
 
 The user will get a result after these steps. The user may also move along on the map to a different location in the city and when the user have found the new location, he/she clicks on one of the icons again to get recommendations for this area. The user can also re-click on the other icons to get the recommendatios of the chosen area.
 
@@ -56,25 +56,26 @@ The user will get a result after these steps. The user may also move along on th
 
 #### Landingpage
 
-The landingpage is simple and clean with only one interaction button for the user to click to get started. The image is of a road and fits with the theme of the page which is travel and finding places. The road illustrates that the user is going somewhere and wants to find something before getting there.
+The *landingpage* is simple and clean with only one interaction button for the user to click to get started. The image is of a road and fits with the theme of the page which is travel and finding places. The road illustrates that the user is going somewhere and wants to find something before getting there.
 
 #### Country selector
 
-The country selector lets the user choose different countries or all countries, the result will be the same when the user goes through the next step which is typing the city of interest.
+The *country selector* lets the user choose different countries or all countries, the result will be the same when the user goes through the next step which is typing the city of interest.
 
 #### City selector
 
-When the user starts typing the city of interest the autocomplete function gives suggestions of cities that fit the spelling the user types. The user is then taken to the center of the chosen site and a city map appears.
+The *city selector* asks the user to type in the city of interest.
+When the user starts typing the city of interest the autocomplete function gives suggestions of cities that fit the spelling the user types. The user is then taken to the center of the chosen site and the city appears on the map.
 
 #### Recommendations
 
 There are *three catagories* of recommendations:
 
-1) Hotels
-2) Bars
-3) restaurants
+**1) Hotels**
+**2) Bars**
+**3) restaurants**
 
-The user clicks on one of the three catagories and markers drop down and displays the location of the chosen icon. The results is also displayed to the right of the map on a desktop and below the map on a smartphone. The user may click on the markers on the map or in the list of recommendations to get a pop-up info box on the map. When the user clicks on another marker or suggestion in the list the previous pop-up box closes and the new one appears.
+The user clicks on one of the three catagories and markers drop down in the map and displays the location of the chosen icon catagory. The results is also displayed to the right of the map on a desktop and below the map on a smartphone. The user may click on the markers on the map or in the list of recommendations to get a pop-up info box on the map. When the user clicks on another marker or suggestion in the list the previous pop-up box closes and the new one appears.
 
 #### Map
 
@@ -82,56 +83,63 @@ The user may also use the map to navigate around in the city by clicking and dra
 
 #### Back to top button
 
-When the user is at the bottom of the page, the user can click the "Back to top" link to easily get back to the landingpage.
+When the user is at the bottom of the page, the user can click the *"Back to top"* link to easily get back to the landingpage.
 
 ## Technologies Used
 
-This site is build with the help of different languages, frameworks and libraries.
+This site is build with *JavaScript, frameworks and libraries*.
+
 Below is a list of what I have used to build this site:
 
 ### Google Maps Platform
 
-I have used the Maps JavaScript API platform. This API lets me customize my map with own content and imagery.
+I have used the *Maps JavaScript API* platform. This API lets me customize my map with own content and imagery.
 
 [Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial)
 
-I have also used the Places API. This API is a service that returns information about places using HTTP requests.
+I have also used the *Places API*. This API is a service that returns information about places using HTTP requests.
 
 [Places API](https://developers.google.com/places/web-service/intro)
 
+### JavaScript
+
+The *JavaScript* used in this website comes from the Maps JavaScript API website, I have made modifications in the code to change the apparence to fit the style on my website.
+
+[JavaScrip](https://www.javascript.com/)
+
 ### Bootstrap
 
-I used the Bootstrap framework to build a responsinve site
+I used the *Bootstrap* framework to build a responsinve site
 
 [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/)
 
 ### CSS3
 
-I used CSS3 media queries to make sure the site works on smartphones.
+I used *CSS3* media queries to make sure the site works on smartphones.
 
 [CSS3](http://www.css3.info/)
 
 ### Google fonts
 
-The fonts that I used came from Google fonts and the fontfamily used is called: Baloo Bhai
+The fonts that I used came from *Google fonts* and the fontfamily used is called: Baloo Bhai
 
 [GoogleFonts](https://fonts.google.com/)
 
 ### Flaticon
 
-I used the icons for the checkboxes form the Flaticon website.
+I used the icons for the checkboxes form the *Flaticon* website.
 
 [Flaticon](https://www.flaticon.com/)
 
 ### jQuery library
 
-I used the jQuery library for the modal
+I used the *jQuery* library for the modal
 
 [jQuery](https://code.jquery.com/)
 
 ### d3 library
 
-A javascript visualization library for HTML and SVG
+*d3* is a javascript visualization library for HTML and SVG
 
 [d3](https://cdnjs.com/libraries/d3)
 
@@ -139,7 +147,7 @@ A javascript visualization library for HTML and SVG
 
 ### Test Matrix
 
-I created a testing matrix in Excel. It outlines the various tests I made to ensure that the site renders consistently across different plattforms. Jasmine testing was not essential for this project.
+I created a testing matrix in Excel. It outlines the various tests I made to ensure that the site renders consistently across different plattforms. *Jasmine testing was not essential for this project*.
 
 ![Test Matrix](Images/Test_matrix.PNG)
 
@@ -168,21 +176,21 @@ I created a testing matrix in Excel. It outlines the various tests I made to ens
 
 I tested the site across the **5 major browsers** (see the test matrix above) to ensure the a broad range of user can successfully use the site.
 
-- Chrome
-- Firefox
-- Opera
-- Edge
-- Internet Explorer (IE)
+*- Chrome*
+*- Firefox*
+*- Opera*
+*- Edge*
+*- Internet Explorer (IE)*
 
 ## Deployment
 
-Deployment and source control was done via GitHub.
+Deployment *and* source control was done via **GitHub**.
 My repository can be found [here](https://github.com/MrBrunotte/Vacation-Explorer)
 
-I have puplished the source code built from the master branch using GitHub Pages.
+I have puplished the source code built from the master branch using **GitHub Pages**.
 The live site can be found [here](https://mrbrunotte.github.io/Vacation-Explorer/)
 
-There is no difference between the deployed version and the development version.
+*There is no difference between the deployed version and the development version.*
 
 ## Content
 
