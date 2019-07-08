@@ -2,23 +2,23 @@
 
 ![Landingpage](Images/Landingpage.PNG)
 
-Vacation explorer makes recommendations to the user based on the chosen city. It can be used to find hotels, restaurants and bars in the chosen city. The user can also scroll on the map to find other locations in the city, this is done by scrolling to the new location and then clicking on one of the three buttons to get the disired recommendations.
+Vacation Explorer - Your new friend when you travel the world!
 
-The webpage is simple and intuiative for the user to use, the intention is to have a clean and simple layout so that the user will not be confused and not know what to do when visiting the page.
+With this website you can, in an easy way, find recommendations of hotels, bars and restaurants in any city around the world! The website also lets you, as a user, scroll around in the map to find the exact location of your interest and get the recommendations for the area.
 
 ## UX
 
 This website is for anyone who thinks of traveling to another city and want some ideas to find hotels, restaurants and bars in the city! The website gives the user a quick and easy access to these three catagories in the chosen city. The webpage has a simple layout so that the user quickly can get an overview if the city has anything to offer them.
 
-The typical user is person or family that haven't decided on where they want to go for a vacation. They want a simple first look at their destination.
+The typical user is person or family that haven't decided on where they want to go for a vacation. They want a simple first look at their destination, or they want to have a guide with them when they are on the vacation.
 
 ### Fonts
 
-I have used two different fonts from Google fonts to create a typographic harmony.
+I have used two different fonts from Google fonts to create typographic harmony.
 I used the Roboto Condensed fonts for the headings (h1 and h2) and it is pared with the Oswald fonts for the body text.
 
-1) Roboto Condensed [RobotoCondensed](https://fonts.google.com/?selection.family=Oswald|Roboto+Condensed&query=roboto+condensed)
-2) Oswald [Oswald](https://fonts.google.com/?selection.family=Oswald|Roboto+Condensed&query=oswald)
+1) Roboto Condensed [RobotoCondensed](https://fonts.google.com/specimen/Roboto+Condensed)
+2) Oswald [Oswald](https://fonts.google.com/specimen/Oswald)
 
 ### Wireframe and Mockup
 
@@ -44,12 +44,12 @@ Here are my individual mockups:
 
 There are four features (at the most) that the user needs to interact with before getting a result:
 
-1) Clicking on the 'Start' button or scrolling down the page.
+1) Clicking on the 'Start' button (or scrolling down the page).
 2) Selecting the country of interest.
 3) typing the city of interest.
 4) Clicking on the icon of interest.
 
-The user will get a result after these steps. The usear may also move along on the map to a different location in the city and when the user have found the new location, he/she clicks on one of the icons again to get recommendations for this location. The user can also re-click on the other icons to get the recommendatios of the chosen location.
+The user will get a result after these steps. The user may also move along on the map to a different location in the city and when the user have found the new location, he/she clicks on one of the icons again to get recommendations for this area. The user can also re-click on the other icons to get the recommendatios of the chosen area.
 
 The webpage is built to be simple and easy for the user to use!
 
