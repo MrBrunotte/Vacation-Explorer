@@ -2,7 +2,7 @@
 
 ![Landingpage](Images/Landingpage.PNG)
 
-Vacation Explorer - Your new friend when you travel the world!
+**Vacation Explorer** - Your new friend when you travel the world!
 
 With this website you can, in an easy way, find recommendations of hotels, bars and restaurants in any city around the world! The website also lets you, as a user, scroll around in the map to find the exact location of your interest and get the recommendations for the area.
 
