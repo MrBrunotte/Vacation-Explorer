@@ -121,7 +121,7 @@ I used *CSS3* media queries to make sure the site works on smartphones.
 
 ### Google fonts
 
-The fonts that I used came from *Google fonts* and the fontfamily used is called: Baloo Bhai
+The fonts that I used came from *Google fonts*.
 
 [GoogleFonts](https://fonts.google.com/)
 
