@@ -1,6 +1,6 @@
 # Vacation Explorer
 
-![Landingpage](Images/Landingpage.PNG)
+![Landingpage](Assets/Landingpage.PNG)
 
 **Vacation Explorer** - Your new friend when you travel the world!
 
@@ -149,7 +149,7 @@ I used the *jQuery* library for the modal
 
 I created a testing matrix in Excel. It outlines the various tests I made to ensure that the site renders consistently across different plattforms. *Jasmine testing was not essential for this project*.
 
-![Test Matrix](Images/Test_matrix.PNG)
+![Test Matrix](Assets/Test_matrix.PNG)
 
 - [HTML Validation](https://validator.w3.org/): No errors or warnings to show.
 - [CSS Validation](https://jigsaw.w3.org/css-validator/): No errors found. CSS validation level: CSS level 3 + SVG
