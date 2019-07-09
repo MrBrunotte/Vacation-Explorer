@@ -30,7 +30,6 @@
                     <div class="header-band">
                         <h1>Vacation Explorer</h1>
                         <p class="header-p">- The quick way to find <i>- hotels, restaurants or bars!</i></p>
-                        <br>
                         <a class="button" href="#search">Start here!</a>
                     </div>
                 </div>
@@ -73,8 +72,8 @@
                             <option value="za">South Africa</option>
                             <option value="es">Spain</option>
                             <option value="pt">Portugal</option>
-                            <option value="us" selected>U.S.A.</option>
                             <option value="uk">United Kingdom</option>
+                            <option value="us" selected>U.S.A.</option>
                         </select>
                     </div>
                     <!--#Controls-->
@@ -88,15 +87,15 @@
 
                     <!--Hotel button-->
                     <button id="hotel-button" type="submit" class="btn" onclick="checkHotels">
-                        <img src="Images/bed48x48.png" alt="bed"><br>Hotels</button>
+                        <img src="Assets/bed48x48.png" alt="bed"><br>Hotels</button>
 
                     <!--Bar button-->
                     <button id="bar-button" type="submit" class="btn" onclick="checkBars">
-                        <img src="Images/glass48x48.png" alt="Wine Glass"><br>Bars</button>
+                        <img src="Assets/glass48x48.png" alt="Wine Glass"><br>Bars</button>
 
                     <!--Restaurant button-->
                     <button id="restaurant-button" type="submit" class="btn" onclick="checkRestaurants">
-                        <img src="Images/restaurant48x48.png" alt="Knife and Fork"><br>Restaurants</button>
+                        <img src="Assets/restaurant48x48.png" alt="Knife and Fork"><br>Restaurants</button>
                 </div>
             </div>
             <!--End container-->
@@ -104,13 +103,13 @@
         <!--END Main-buttons. Dropdown meny, city search and three categories-->
         <div id="main">
             <!--  container for map and listings-->
-            <div class="container">
+            <div class="container-fluid">
 
                 <div class="row">
 
-                    <div id="map" class="col-sm-12 col-md-6"></div>
+                    <div id="map" class="col-sm-12 col-md-8"></div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
 
                         <div id="text-overlay"></div>
 
@@ -173,7 +172,7 @@
         crossorigin="anonymous"></script>
 
     <!--! My script file-->
-    <script src="./js/script.js"></script>
+    <script src="./Assets/script.js"></script>
 
     <!--! Google maps libraries and my API key-->
     <script

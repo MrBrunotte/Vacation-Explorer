@@ -4,7 +4,7 @@ var results = {};
 var autocomplete;
 var countryRestrict = { 'country': 'us' };
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
-var goldStar = '/Images/trophy48x48.png';
+var goldStar = '/Assets/trophy48x48.png';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
 var countries = {
@@ -54,7 +54,7 @@ var countries = {
     },
     'us': {
         center: { lat: 37.1, lng: -95.7 },
-        zoom: 3
+        zoom: 4
     },
     'uk': {
         center: { lat: 54.8, lng: -4.6 },

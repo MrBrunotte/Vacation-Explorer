@@ -37,13 +37,12 @@
 /* -----------------------------# ID's------------------------------- */
 
     #search {
-        height: 810px;
+        height: 962px;
         background-color: rgba(128, 128, 128, 0.315);
     }
 
-    #map,
-    #listing {
-        height: 385px;
+    #map {
+        height: 550px;
     }
 
     #listing {
@@ -61,7 +60,7 @@
     }
 
     #listing {
-        background-image: url("../Images/find-local.png");
+        background-image: url("../Assets/find-local.png");
         background-repeat: no-repeat;
         background-position: center; 
         display: block;
@@ -107,7 +106,7 @@
     }
 
     .image {
-        background-image: url("../Images/street2.jpg");
+        background-image: url("../Assets/street2.jpg");
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center 50%;
@@ -130,10 +129,6 @@
         width: 28px;
         vertical-align: middle;
         margin: 5px;
-    }
-
-    .container-fluid {
-        padding: 10px 50px 10px 50px;
     }
 
     .picture-overlay {
@@ -162,8 +157,6 @@
         text-align: center;
         padding-top: 350px;
     }
-
-
 
     .header-band {
         background-color: rgba(0, 0, 0, 0.4);
@@ -285,41 +278,51 @@
 
 /*! -- Galaxy S5 - PORTRAIT --*/
 @media only screen and (min-width: 300px) {
+    .wrapper-top {
+        height: 45vh;
+    }
+
     h1 {
-        font-size: 28px;
+        font-size: 18px;
     }
 
     .header-text {
-        padding-top: 205px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        min-height: 16em;
+        justify-content: center;
     }
 
     .header-band {
-        height: 140px;
+        width: 100%;
     }
 
     .header-p {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .button {
-        font-size: 24px;
+        font-size: 14px;
     }
 
-/* bottom of page */
-
     h2 {
-        font-size: 24px;
+        font-size: 14px;
     }
 
     .info-text {
-        font-size: 12px;
+        font-size: 10px;
         margin-left: 10px;
         margin-right: 10px;
     }
 
+    .information-text {
+        padding: 5px 16px 4px 16px;
+    }
+
     #country, 
     #autocomplete {
-        min-width: 180px;
+        min-width: 160px;
     }
 
     #hotel-button, 
@@ -334,15 +337,14 @@
         width: 94%;
         left: 10px;
         padding: 10px;
+        height: 400px;
     }
 
     #listing,
     #results {
-        width: 94%;
-    }
-
-    #listing {
-        margin-left: 15px;
+        width: 100%;
+        height: 304px;
+        margin-left: 0px;
     }
 
     p {
@@ -351,27 +353,47 @@
         margin-bottom: 5px;
     }
 
+    .form-control {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .form-group {
+        margin: 0px 16px 5px 16px;
+    }
+
+    #controls {
+        margin: 0px;
+    }
+
     .placeIcon {
         padding-left: 5px;
     }
 
     #search {
-        height: 1340px;
+        height: 1144px;
     }
 }
 
 /*! -- iPhone 6/7/8 & iPhone X - PORTRAIT --*/
 @media only screen and (min-width: 375px) {
+    .wrapper-top {
+        height: 45vh;
+    }
     h1 {
         font-size: 28px;
     }
 
     .header-text {
-        padding-top: 245px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        min-height: 18em;
+        justify-content: center;
     }
 
     .header-band {
-        height: 140px;
+        width: 100%;
     }
 
     .header-p {
@@ -385,7 +407,7 @@
     /* bottom of page */
 
     h2 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .info-text {
@@ -394,9 +416,13 @@
         margin-right: 10px;
     }
 
+    .form-control {
+        font-size: 14px;
+    }
+
     #country, 
     #autocomplete {
-        min-width: 180px;
+        min-width: 200px;
     }
 
     #hotel-button, 
@@ -433,34 +459,162 @@
     }
 
     #search {
-        height: 1325px;
+        height: 1192px;
+    }
+}
+
+/*! -- iPhone 4 - LANDSCAPE --*/
+@media only screen and (min-width: 480px) and (orientation: landscape) {
+    .wrapper-top {
+        height: 45vh;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header-text {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        min-height: 8em;
+        justify-content: center;
+    }
+
+    .header-band {
+        width: 100%;
+        height: 68px;
+    }
+
+    .header-p {
+        font-size: 10px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .information-text {
+        padding: 4px 0px 4px 0px;
+    }
+
+    .info-text {
+        font-size: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .form-control {
+        font-size: 13px;
+    }
+
+    #controls {
+        margin-top: 0px;
+        margin-bottom: 5px; 
+    }
+
+    .form-group {
+        margin: 0px 16px 5px 16px;
+    }
+
+    #country, 
+    #autocomplete {
+        min-width: 160px;
+    }
+
+    #hotel-button, 
+    #restaurant-button, 
+    #bar-button {
+        width: 75px;
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    #map {
+        width: 94%;
+        left: 10px;
+        padding: 10px;
+        height: 400px;
+    }
+
+    #listing,
+    #results {
+        width: 100%;
+        height: 304px;
+        margin-left: 0px;
+    }
+
+    p {
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .placeIcon {
+        padding-left: 5px;
+    }
+
+    #search {
+        height: 1065px;
     }
 }
 
 /*! -- Galaxy S5 - LANDSCAPE --*/
 @media only screen and (min-width: 640px) and (orientation: landscape) {
+
+    .wrapper-top {
+        height: 58vh;
+    }
     h1 {
-        font-size: 28px;
-    }
-
-    .header-text {
-        padding-top: 100px;
-    }
-
-    .header-band {
-        height: 140px;
-    }
-
-    .header-p {
-        font-size: 14px;
-    }
-
-    .button {
         font-size: 24px;
     }
 
+    .header-text {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        min-height: 13em;
+        justify-content: center;
+    }
+
+    .header-band {
+        width: 100%;
+        height: 69px;
+    }
+
+    .header-p {
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #map {
+        width: 100%;
+        margin: 0px;
+        left: 0px;
+        height: 350px;
+        margin-top: 10px;
+    }
+
+    .star {
+        padding-left: 50px;
+    }
+
     #search {
-        height: 1195px;
+        height: 975px;
     }
 }
 
@@ -468,13 +622,50 @@
 
 /*! -- iPhone 6/7/8 - LANDSCAPE --*/
 @media only screen and (min-width: 667px) and (orientation: landscape) {
+    h1{
+        padding: 0px;
+        margin: 0px;
+    }
 
     .header-text {
-        padding-top: 110px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        min-height: 13em;
+        justify-content: center;
+    }
+
+    .header-band {
+        width: 100%;
+        height: 72px;
+    }
+
+    .header-p {
+        margin: 0px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    .information-text {
+        padding: 4px;
+    }
+
+    #country,
+    #autocomplete {
+        min-width: 190px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+    .star {
+        padding-left: 70px;
     }
 
     #search {
-        height: 1187px;
+        height: 973px;
     }
 }
 
@@ -487,18 +678,26 @@
     }
 
     .header-text {
-        padding-top: 320px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        min-height: 35em;
+        justify-content: center;
     }
+
+    .header-band {
+        width: 100%;
+        height: 195px;
+    }
+
     .header-p {
         font-size: 24px;
     }
 
-    .header-band {
-        height: 195px;
+    #country,
+    #autocomplete {
+        font-size: 14px;
     }
-
-    
-    /* bottom of page */
 
     h2 {
         font-size: 38px;
@@ -510,9 +709,20 @@
         padding-right: 15px;
     }
 
+    .col-md-8 {
+        max-width: 100%;
+        flex: 100%;
+    }
+
+    #map {
+        width: 100%;
+        left: 0px;
+        padding: 0px;
+    }
+
     #listing, 
     #results {
-        width: 100%;
+        width: 720px;
     }
 
     p {
@@ -525,44 +735,126 @@
         padding-left: 5px;
     }
 
-    #search {
-        height: 895px;
-    }
-}
-
-/*! -- iPad - LANDSCAPE --*/
-@media only screen and (min-width: 769px) and (orientation: landscape) {
-    .header-text {
-        padding-top: 230px;
+    .star {
+        padding-left: 90px;
     }
 
     #search {
-        height: 840px;
+        height: 1200px;
     }
 }
+
+
 
 /*! -- iPhone X - LANDSCAPE --*/
 @media only screen and (min-width: 812px) and (orientation: landscape) {
+    .wrapper-top {
+        height: 56vh;
+    }
+    h1 {
+        font-size: 28px;
+        padding: 0px;
+    }
 
     .header-text {
-        padding-top: 230px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        min-height: 12em;
+        justify-content: center;
     }
 
-    #listing,
+    .header-band {
+        width: 100%;
+        height: 78px;
+    }
+
+    .header-p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .info-text {
+        font-size: 12px;
+    }
+
+    .col-md-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #map {
+        width: 100%;
+        margin: 0px;
+        left: 0px;
+        height: 350px;
+        margin-top: 10px;
+    }
+
+    #country,
+    #autocomplete {
+        min-width: 200px;
+    }
+
+    #listing, 
     #results {
-        width: 105%;
+        width: 762px;
     }
 
-    #listing {
-        margin-left: 0px;
+    p{
+        font-size: 12px;
     }
+
     #search {
-        height: 860px;
+        height: 983px;
+    }
+
+}
+
+/*! -- iPad - LANDSCAPE --*/
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+    .wrapper-top {
+        height: 50vh;
+    }
+    .header-text {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        min-height: 22em;
+        justify-content: center;
+    }
+
+    .header-band {
+        width: 100%;
+        height: 97px;
+    }
+
+    #listing, 
+    #results {
+        width: 975px;
+    }
+
+    .star {
+        padding-left: 125px;
+    }
+
+    #search {
+        height: 1010px;
     }
 }
 
 /*! -- SETTINGS ABOVE 1024px --*/
 @media only screen and (min-width: 1025px) {
+    .wrapper-top {
+        height: 100vh;
+    }
     h1 {
         font-size: 75px;
     }
@@ -571,7 +863,7 @@
     }
 
     .header-band {
-        height: 240px;
+        height: 190px;
     }
 
     .header-p {
@@ -586,6 +878,10 @@
         font-size: 38px;
     }
 
+    .info-text {
+        font-size: 16px;
+    }
+
     #country,
     #autocomplete {
         min-width: 260px;
@@ -597,10 +893,42 @@
         width: 170px;
     }
 
+    #map {
+        width: 100%;
+        height: 630px;
+        left: 10px;
+        padding: 0px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .col-md-8 {
+        max-width: 66%;
+    }
+    
+    .col-md-4 {
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+
     #listing,
     #results {
-        width: 94%;
-        margin-left: 15px;
+        width: 97%;
+        padding: 0px;
+        margin: 0px 0px 0px 5px;
+        margin: 20px 0px 20px 10px;
+    }
+
+    #listing {
+        margin: 20px 0px 20px 0px;
+        height: 630px;
+        overflow-y: hidden;
+    }
+
+    #results {
+        margin: 0px 10px 20px 10px;
+        height: 630px;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .star {
@@ -612,6 +940,6 @@
     }
 
     #search {
-        height: 815px;
+        height: 1007px;
     }
 }
