@@ -1,6 +1,6 @@
 # Vacation Explorer
 
-![Landingpage](Assets/Landingpage.PNG)
+![Landingpage](assets/Landingpage.PNG)
 
 **Vacation Explorer** - Your new friend when you travel the world!
 
@@ -31,13 +31,13 @@ Below you can see the **wireframes** and **mockups** for my site.
 
 #### My wireframes - Smartphone and Desktop
 
-1) [Smartphone wireframe](Wireframe_Mockup/iPhone_Wireframe.png)
-2) [Desktop wireframe](Wireframe_Mockup/DESKTOP_Wireframe.png)
+1) [Smartphone wireframe](wireframe_Mockup/iPhone_Wireframe.png)
+2) [Desktop wireframe](wireframe_Mockup/DESKTOP_Wireframe.png)
 
 #### Mockups - Smartphone and Desktop
 
-1) [Smartphone mockup](Wireframe_Mockup/iPhone_Mockup.png)
-2) [Desktop mockup](Wireframe_Mockup/DESKTOP_Mockup.png)
+1) [Smartphone mockup](wireframe_Mockup/iPhone_Mockup.png)
+2) [Desktop mockup](wireframe_Mockup/DESKTOP_Mockup.png)
 
 ## Features
 
@@ -85,7 +85,7 @@ The user may also use the map to navigate around in the city by clicking and dra
 
 When the user is at the bottom of the page, the user can click the *"Back to top"* link to easily get back to the landingpage.
 
-## Technologies Used
+## Technologies Useds
 
 This site is build with *JavaScript, frameworks and libraries*.
 
