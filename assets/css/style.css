@@ -60,7 +60,7 @@
     }
 
     #listing {
-        background-image: url("../Assets/find-local.png");
+        background-image: url("../images/find-local.png");
         background-repeat: no-repeat;
         background-position: center; 
         display: block;
@@ -106,7 +106,7 @@
     }
 
     .image {
-        background-image: url("../Assets/street2.jpg");
+        background-image: url("../images/street2.jpg");
         background-size: cover; 
         background-repeat: no-repeat;
         background-position: center 50%;
