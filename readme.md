@@ -43,10 +43,10 @@ Below you can see the **wireframes** and **mockups** for my site.
 
 There are *four* features (at the most) that the user needs to interact with before getting a result:
 
-**1) Clicking on the 'Start' button (or scrolling down the page).**
-**2) Selecting the country of interest.**
-**3) Typing the city of interest.**
-**4) Clicking on the icon of interest.**
+1) **Clicking on the 'Start' button (or scrolling down the page).**
+2) **Selecting the country of interest.**
+3) **Typing the city of interest.**
+4) **Clicking on the icon of interest.**
 
 The user will get a result after these steps. The user may also move along on the map to a different location in the city and when the user have found the new location, he/she clicks on one of the icons again to get recommendations for this area. The user can also re-click on the other icons to get the recommendatios of the chosen area.
 
