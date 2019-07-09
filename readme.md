@@ -31,8 +31,8 @@ Below you can see the **wireframes** and **mockups** for my site.
 
 #### My wireframes - Smartphone and Desktop
 
-1) [Smartphone wireframe](wireframe_Mockup/iPhone_Wireframe.png)
-2) [Desktop wireframe](wireframe_Mockup/DESKTOP_Wireframe.png)
+1) [Smartphone wireframe](/wireframe_Mockup/iPhone_Wireframe.png)
+2) [Desktop wireframe](../wireframe_Mockup/DESKTOP_Wireframe.png)
 
 #### Mockups - Smartphone and Desktop
 
