@@ -1,6 +1,6 @@
 # Vacation Explorer
 
-![Landingpage](assets\images\Landingpage.PNG)
+![Landingpage](assets/images/Landingpage.PNG)
 
 **Vacation Explorer** - Your new friend when you travel the world!
 
