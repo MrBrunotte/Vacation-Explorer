@@ -31,7 +31,7 @@ Below you can see the **wireframes** and **mockups** for my site.
 
 #### My wireframes - Smartphone and Desktop
 
-1) [Smartphone wireframe](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Wireframe_Mockup/iPhone_Wireframe.png)
+1) [Smartphone wireframe](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/wireframe_Mockup/wireframeSmartphone.png)
 2) [Desktop wireframe](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/wireframe_Mockup/wireframeDesktop.png)
 
 #### Mockups - Smartphone and Desktop
