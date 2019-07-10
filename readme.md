@@ -71,9 +71,9 @@ When the user starts typing the city of interest the autocomplete function gives
 
 There are *three catagories* of recommendations:
 
-**1) Hotels**
-**2) Bars**
-**3) restaurants**
+1) **Hotels**
+2) **Bars**
+3) **restaurants**
 
 The user clicks on one of the three catagories and markers drop down in the map and displays the location of the chosen icon catagory. The results is also displayed to the right of the map on a desktop and below the map on a smartphone. The user may click on the markers on the map or in the list of recommendations to get a pop-up info box on the map. When the user clicks on another marker or suggestion in the list the previous pop-up box closes and the new one appears.
 
