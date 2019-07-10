@@ -32,12 +32,12 @@ Below you can see the **wireframes** and **mockups** for my site.
 #### My wireframes - Smartphone and Desktop
 
 1) [Smartphone wireframe](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Wireframe_Mockup/iPhone_Wireframe.png)
-2) [Desktop wireframe](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Wireframe_Mockup/DESKTOP_Wireframe.png)
+2) [Desktop wireframe](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/wireframe_Mockup/wireframeDesktop.png)
 
 #### Mockups - Smartphone and Desktop
 
-1) [Smartphone mockup](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Wireframe_Mockup/iPhone_Mockup.png)
-2) [Desktop mockup](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/Wireframe_Mockup/DESKTOP_Mockup.png)
+1) [Smartphone mockup](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/wireframe_Mockup/mockupSmartphone.png)
+2) [Desktop mockup](https://github.com/MrBrunotte/Vacation-Explorer/blob/master/wireframe_Mockup/mockupDesktop.png)
 
 ## Features
 
