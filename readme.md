@@ -73,7 +73,7 @@ There are *three catagories* of recommendations:
 
 1) **Hotels**
 2) **Bars**
-3) **restaurants**
+3) **Restaurants**
 
 The user clicks on one of the three catagories and markers drop down in the map and displays the location of the chosen icon catagory. The results is also displayed to the right of the map on a desktop and below the map on a smartphone. The user may click on the markers on the map or in the list of recommendations to get a pop-up info box on the map. When the user clicks on another marker or suggestion in the list the previous pop-up box closes and the new one appears.
 
@@ -202,7 +202,7 @@ To create a local repository from my work follow these steps:
 3) In the *Clone with HTTPs section* clone URL for the repository.
 4) Open Git Bash in your local platform.
 5) Change the current working directory to the location where you want the cloned directory to be made.
-6) Type git clone, and then paste the URL that was copied in step 5: [My git clone](https://github.com/MrBrunotte/Vacation-Explorer.git)
+6) Type git clone, and then paste the URL that was copied in step 5: URL https://github.com/MrBrunotte/Vacation-Explorer.git
 7) After pressing **ENTER** your local clone of my project is created.
 
 I have puplished the source code built from the master branch using **GitHub Pages**.
